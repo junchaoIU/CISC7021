@@ -1,0 +1,2 @@
+file news_character.train: 299467 sentences, 33750588 words, 0 OOVs
+0 zeroprobs, logprob= -3.269938e+07 ppl= 9.127097 ppl1= 9.307942

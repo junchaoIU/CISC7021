@@ -1,0 +1,2 @@
+file news_word.train: 299467 sentences, 6535812 words, 0 OOVs
+0 zeroprobs, logprob= -1.48957e+07 ppl= 151.0908 ppl1= 190.147
