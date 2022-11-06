@@ -1,0 +1,2 @@
+To run the decoder, please call:
+  moses -f /home/wujunchao/mosesdecoder/corpus/working/mert-work/filtered/moses.ini -i /home/wujunchao/mosesdecoder/corpus/working/mert-work/filtered/input.9341

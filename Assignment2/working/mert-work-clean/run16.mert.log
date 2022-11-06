@@ -1,0 +1,57 @@
+shard_size = 0 shard_count = 0
+Seeding random numbers with system clock 
+name: case value: true
+Data::m_score_type BLEU
+Data::Scorer type from Scorer: BLEU
+Loading Data from: run1.scores.dat and run1.features.dat
+loading feature data from run1.features.dat
+loading score data from run1.scores.dat
+Loading Data from: run2.scores.dat and run2.features.dat
+loading feature data from run2.features.dat
+loading score data from run2.scores.dat
+Loading Data from: run3.scores.dat and run3.features.dat
+loading feature data from run3.features.dat
+loading score data from run3.scores.dat
+Loading Data from: run4.scores.dat and run4.features.dat
+loading feature data from run4.features.dat
+loading score data from run4.scores.dat
+Loading Data from: run5.scores.dat and run5.features.dat
+loading feature data from run5.features.dat
+loading score data from run5.scores.dat
+Loading Data from: run6.scores.dat and run6.features.dat
+loading feature data from run6.features.dat
+loading score data from run6.scores.dat
+Loading Data from: run7.scores.dat and run7.features.dat
+loading feature data from run7.features.dat
+loading score data from run7.scores.dat
+Loading Data from: run8.scores.dat and run8.features.dat
+loading feature data from run8.features.dat
+loading score data from run8.scores.dat
+Loading Data from: run9.scores.dat and run9.features.dat
+loading feature data from run9.features.dat
+loading score data from run9.scores.dat
+Loading Data from: run10.scores.dat and run10.features.dat
+loading feature data from run10.features.dat
+loading score data from run10.scores.dat
+Loading Data from: run11.scores.dat and run11.features.dat
+loading feature data from run11.features.dat
+loading score data from run11.scores.dat
+Loading Data from: run12.scores.dat and run12.features.dat
+loading feature data from run12.features.dat
+loading score data from run12.scores.dat
+Loading Data from: run13.scores.dat and run13.features.dat
+loading feature data from run13.features.dat
+loading score data from run13.scores.dat
+Loading Data from: run14.scores.dat and run14.features.dat
+loading feature data from run14.features.dat
+loading score data from run14.scores.dat
+Loading Data from: run15.scores.dat and run15.features.dat
+loading feature data from run15.features.dat
+loading score data from run15.scores.dat
+Loading Data from: run16.scores.dat and run16.features.dat
+loading feature data from run16.features.dat
+loading score data from run16.scores.dat
+Data loaded : [Wall 3.21004 CPU 3.19431] seconds.
+Creating a pool of 1 threads
+Best point: 0.0278718 0.0175322 0.115594 0.0928925 0.00402412 0.0736308 0.0148109 0.0889873 -0.333676 0.0470237 0.0171154 0.0432223 0.0383876 0.0852314  => 0.107963
+Stopping... : [Wall 235.389 CPU 234.484] seconds.
