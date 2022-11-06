@@ -1,0 +1,12 @@
+Binary write mode is NOT selected
+Scorer type: BLEU
+name: case value: true
+Loading reference from /home/wujunchao/mosesdecoder/corpus/clean_dev.en
+........Data::m_score_type BLEU
+Data::Scorer type from Scorer: BLEU
+loading nbest from run2.best100.out.gz
+Loaded N-best lists : [Wall 0.643067 CPU 0.62597] seconds.
+Binary write mode is NOT selected
+saving the array into run2.features.dat
+saving the array into run2.scores.dat
+Stopping... : [Wall 1.13721 CPU 1.11534] seconds.
