@@ -1,0 +1,550 @@
+2022-11-24 14:53:20,922 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-24 14:53:21,111 device: cuda n_gpu: 1
+2022-11-24 14:57:51,846 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-24 14:57:52,043 device: cuda n_gpu: 1
+2022-11-24 14:57:52,224 Writing example 0 of 1043
+2022-11-24 14:57:52,247 *** Example ***
+2022-11-24 14:57:52,260 guid: dev-0
+2022-11-24 14:57:52,281 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-24 14:57:52,296 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-24 14:57:52,310 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-24 14:57:52,330 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-24 14:57:52,335 label: 1
+2022-11-24 14:57:52,345 label_id: 1
+2022-11-24 14:57:52,646 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-24 14:57:53,113 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-24 14:57:53,226 loading model...
+2022-11-24 14:57:53,253 done!
+2022-11-24 14:57:58,865 ***** Running evaluation *****
+2022-11-24 14:57:58,874   Num examples = 1043
+2022-11-24 14:57:58,879   Batch size = 32
+2022-11-24 14:57:58,882 開始Eval
+2022-11-24 14:58:03,043 Eval結束，縂耗時4.161800384521484s
+2022-11-24 14:58:03,070 ***** Eval results *****
+2022-11-24 14:58:03,074   eval_loss = 0.9644604555585168
+2022-11-24 14:58:03,094   mcc = 0.406505385459584
+2022-11-24 16:06:56,106 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-24 16:06:56,264 device: cuda n_gpu: 1
+2022-11-24 16:06:56,343 Writing example 0 of 527
+2022-11-24 16:06:56,347 *** Example ***
+2022-11-24 16:06:56,348 guid: dev-0
+2022-11-24 16:06:56,350 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-24 16:06:56,351 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-24 16:06:56,352 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-24 16:06:56,353 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-24 16:06:56,353 label: 1
+2022-11-24 16:06:56,354 label_id: 1
+2022-11-24 16:06:56,493 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-24 16:06:56,950 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-24 16:06:57,045 loading model...
+2022-11-24 16:06:57,065 done!
+2022-11-24 16:07:02,156 ***** Running evaluation *****
+2022-11-24 16:07:02,163   Num examples = 527
+2022-11-24 16:07:02,164   Batch size = 32
+2022-11-24 16:07:02,165 開始Eval
+2022-11-24 16:07:05,935 Eval結束，縂耗時3.7697455883026123s
+2022-11-24 16:07:05,940 ***** Eval results *****
+2022-11-24 16:07:05,941   eval_loss = 0.9251355160685146
+2022-11-24 16:07:05,945   mcc = 0.5251347112164407
+2022-11-26 14:35:11,723 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 14:35:11,933 device: cuda n_gpu: 1
+2022-11-26 14:35:12,161 Writing example 0 of 527
+2022-11-26 14:35:12,188 *** Example ***
+2022-11-26 14:35:12,207 guid: dev-0
+2022-11-26 14:35:12,227 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 14:35:12,233 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 14:35:12,257 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 14:35:12,260 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 14:35:12,269 label: 1
+2022-11-26 14:35:12,281 label_id: 1
+2022-11-26 14:35:12,500 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 14:35:13,016 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 14:35:13,738 loading model...
+2022-11-26 14:35:13,781 done!
+2022-11-26 14:35:20,220 ***** Running evaluation *****
+2022-11-26 14:35:20,223   Num examples = 527
+2022-11-26 14:35:20,253   Batch size = 32
+2022-11-26 14:35:20,270 開始Eval
+2022-11-26 14:35:20,303 開始Eval
+2022-11-26 14:35:24,608 Eval結束，縂耗時4.177386283874512s，batch_num为17，平均耗时0.2457286049337948s
+2022-11-26 14:35:24,629 Eval結束，縂耗時4.359056711196899s
+2022-11-26 14:35:24,648 ***** Eval results *****
+2022-11-26 14:35:24,661   eval_loss = 0.9251355160685146
+2022-11-26 14:35:24,668   mcc = 0.5251347112164407
+2022-11-26 14:57:39,390 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 14:57:39,565 device: cuda n_gpu: 1
+2022-11-26 14:57:39,710 Writing example 0 of 527
+2022-11-26 14:57:39,717 *** Example ***
+2022-11-26 14:57:39,720 guid: dev-0
+2022-11-26 14:57:39,738 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 14:57:39,765 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 14:57:39,788 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 14:57:39,795 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 14:57:39,807 label: 1
+2022-11-26 14:57:39,821 label_id: 1
+2022-11-26 14:57:39,986 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 14:57:40,461 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 14:57:40,563 loading model...
+2022-11-26 14:57:40,586 done!
+2022-11-26 14:57:46,192 ***** Running evaluation *****
+2022-11-26 14:57:46,196   Num examples = 527
+2022-11-26 14:57:46,213   Batch size = 32
+2022-11-26 14:57:46,221 開始Eval
+2022-11-26 14:57:46,242 開始Eval
+2022-11-26 14:57:50,364 Eval結束，縂耗時3.947965145111084s，batch_num为17，平均耗时0.23223324383006377s
+2022-11-26 14:57:50,390 Eval結束，縂耗時4.169524431228638s
+2022-11-26 14:57:50,407 ***** Eval results *****
+2022-11-26 14:57:50,421   eval_loss = 0.9251355160685146
+2022-11-26 14:57:50,442   mcc = 0.5251347112164407
+2022-11-26 15:00:04,117 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:00:04,435 device: cuda n_gpu: 1
+2022-11-26 15:00:04,740 Writing example 0 of 527
+2022-11-26 15:00:04,765 *** Example ***
+2022-11-26 15:00:04,783 guid: dev-0
+2022-11-26 15:00:04,797 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:00:04,807 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:00:04,826 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:00:04,849 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:00:04,866 label: 1
+2022-11-26 15:00:04,868 label_id: 1
+2022-11-26 15:00:05,234 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:00:06,007 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:00:06,179 loading model...
+2022-11-26 15:00:06,216 done!
+2022-11-26 15:00:16,379 ***** Running evaluation *****
+2022-11-26 15:00:16,393   Num examples = 527
+2022-11-26 15:00:16,397   Batch size = 32
+2022-11-26 15:00:16,408 開始Eval
+2022-11-26 15:00:16,413 開始Eval
+2022-11-26 15:00:22,500 Eval結束，縂耗時5.8888585567474365s，batch_num为17，平均耗时0.34640344451455507s
+2022-11-26 15:00:22,536 Eval結束，縂耗時6.12793231010437s
+2022-11-26 15:00:22,541 ***** Eval results *****
+2022-11-26 15:00:22,549   eval_loss = 0.9251355160685146
+2022-11-26 15:00:22,562   mcc = 0.5251347112164407
+2022-11-26 15:03:24,199 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:03:24,440 device: cuda n_gpu: 1
+2022-11-26 15:03:24,647 Writing example 0 of 527
+2022-11-26 15:03:24,654 *** Example ***
+2022-11-26 15:03:24,657 guid: dev-0
+2022-11-26 15:03:24,682 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:03:24,692 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:03:24,698 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:03:24,706 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:03:24,743 label: 1
+2022-11-26 15:03:24,746 label_id: 1
+2022-11-26 15:03:25,005 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:03:25,823 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:03:25,966 loading model...
+2022-11-26 15:03:25,999 done!
+2022-11-26 15:03:34,814 ***** Running evaluation *****
+2022-11-26 15:03:34,828   Num examples = 527
+2022-11-26 15:03:34,836   Batch size = 32
+2022-11-26 15:03:34,845 開始Eval
+2022-11-26 15:03:34,847 開始Eval
+2022-11-26 15:03:40,599 Eval結束，縂耗時5.619202136993408s，batch_num为17，平均耗时0.33054130217608285s
+2022-11-26 15:03:40,636 Eval結束，縂耗時5.79118537902832s
+2022-11-26 15:03:40,656 ***** Eval results *****
+2022-11-26 15:03:40,673   eval_loss = 0.9251355160685146
+2022-11-26 15:03:40,680   mcc = 0.5251347112164407
+2022-11-26 15:06:30,973 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:06:31,236 device: cuda n_gpu: 1
+2022-11-26 15:06:31,471 Writing example 0 of 527
+2022-11-26 15:06:31,492 *** Example ***
+2022-11-26 15:06:31,498 guid: dev-0
+2022-11-26 15:06:31,512 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:06:31,531 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:06:31,535 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:06:31,543 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:06:31,556 label: 1
+2022-11-26 15:06:31,572 label_id: 1
+2022-11-26 15:06:31,864 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:06:32,695 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:06:32,834 loading model...
+2022-11-26 15:06:32,873 done!
+2022-11-26 15:06:42,185 ***** Running evaluation *****
+2022-11-26 15:06:42,193   Num examples = 527
+2022-11-26 15:06:42,217   Batch size = 32
+2022-11-26 15:06:42,221 開始Eval
+2022-11-26 15:06:42,228 開始Eval
+2022-11-26 15:06:48,203 Eval結束，縂耗時5.773771047592163s，batch_num为17，平均耗时0.33963359103483315s
+2022-11-26 15:06:48,227 Eval結束，縂耗時6.006404161453247s
+2022-11-26 15:06:48,244 ***** Eval results *****
+2022-11-26 15:06:48,246   eval_loss = 0.9251355160685146
+2022-11-26 15:06:48,253   mcc = 0.5251347112164407
+2022-11-26 15:09:50,583 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:09:50,858 device: cuda n_gpu: 1
+2022-11-26 15:09:51,130 Writing example 0 of 527
+2022-11-26 15:09:51,136 *** Example ***
+2022-11-26 15:09:51,148 guid: dev-0
+2022-11-26 15:09:51,154 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:09:51,173 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:09:51,179 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:09:51,195 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:09:51,200 label: 1
+2022-11-26 15:09:51,207 label_id: 1
+2022-11-26 15:09:51,493 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:09:52,316 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:09:52,463 loading model...
+2022-11-26 15:09:52,510 done!
+2022-11-26 15:10:02,258 ***** Running evaluation *****
+2022-11-26 15:10:02,304   Num examples = 527
+2022-11-26 15:10:02,314   Batch size = 32
+2022-11-26 15:10:02,316 開始Eval
+2022-11-26 15:10:02,333 開始Eval
+2022-11-26 15:10:09,747 Eval結束，縂耗時7.152732610702515s，batch_num为17，平均耗时0.4207489771001479s
+2022-11-26 15:10:09,799 Eval結束，縂耗時7.4829559326171875s
+2022-11-26 15:10:09,820 ***** Eval results *****
+2022-11-26 15:10:09,824   eval_loss = 0.9251355160685146
+2022-11-26 15:10:09,834   mcc = 0.5251347112164407
+2022-11-26 15:43:27,278 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:43:27,334 device: cpu n_gpu: 0
+2022-11-26 15:43:27,403 Writing example 0 of 527
+2022-11-26 15:43:27,405 *** Example ***
+2022-11-26 15:43:27,407 guid: dev-0
+2022-11-26 15:43:27,408 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:43:27,409 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:43:27,410 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:43:27,411 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:43:27,412 label: 1
+2022-11-26 15:43:27,413 label_id: 1
+2022-11-26 15:43:27,499 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:43:27,838 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:43:28,665 loading model...
+2022-11-26 15:43:28,679 done!
+2022-11-26 15:43:28,689 ***** Running evaluation *****
+2022-11-26 15:43:28,691   Num examples = 527
+2022-11-26 15:43:28,694   Batch size = 32
+2022-11-26 15:43:28,695 開始Eval
+2022-11-26 15:43:28,697 開始Eval
+2022-11-26 15:43:32,505 Eval結束，縂耗時3.7055349349975586s，batch_num为17，平均耗时0.2179726432351505s
+2022-11-26 15:43:32,549 Eval結束，縂耗時3.854041814804077s
+2022-11-26 15:43:32,577 ***** Eval results *****
+2022-11-26 15:43:32,582   eval_loss = 0.9251355037969702
+2022-11-26 15:43:32,586   mcc = 0.5251347112164407
+2022-11-26 15:46:00,968 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:46:01,001 device: cpu n_gpu: 0
+2022-11-26 15:46:01,073 Writing example 0 of 527
+2022-11-26 15:46:01,076 *** Example ***
+2022-11-26 15:46:01,081 guid: dev-0
+2022-11-26 15:46:01,084 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:46:01,087 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:46:01,090 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:46:01,094 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:46:01,097 label: 1
+2022-11-26 15:46:01,112 label_id: 1
+2022-11-26 15:46:01,244 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:46:01,598 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:46:01,680 loading model...
+2022-11-26 15:46:01,693 done!
+2022-11-26 15:46:01,702 ***** Running evaluation *****
+2022-11-26 15:46:01,713   Num examples = 527
+2022-11-26 15:46:01,717   Batch size = 32
+2022-11-26 15:46:01,721 開始Eval
+2022-11-26 15:46:01,724 開始Eval
+2022-11-26 15:46:03,503 Eval結束，縂耗時1.7095508575439453s，batch_num为17，平均耗时0.10056181514964384s
+2022-11-26 15:46:03,515 Eval結束，縂耗時1.7939648628234863s
+2022-11-26 15:46:03,517 ***** Eval results *****
+2022-11-26 15:46:03,518   eval_loss = 0.9251355037969702
+2022-11-26 15:46:03,520   mcc = 0.5251347112164407
+2022-11-26 15:50:07,701 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=True, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:50:07,760 device: cpu n_gpu: 0
+2022-11-26 15:50:07,823 Writing example 0 of 527
+2022-11-26 15:50:07,830 *** Example ***
+2022-11-26 15:50:07,850 guid: dev-0
+2022-11-26 15:50:07,852 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:50:07,854 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:50:07,857 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:50:07,861 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:50:07,862 label: 1
+2022-11-26 15:50:07,863 label_id: 1
+2022-11-26 15:50:07,948 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:50:08,308 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:50:08,379 loading model...
+2022-11-26 15:50:08,389 done!
+2022-11-26 15:50:08,407 ***** Running evaluation *****
+2022-11-26 15:50:08,410   Num examples = 527
+2022-11-26 15:50:08,411   Batch size = 32
+2022-11-26 15:50:08,413 開始Eval
+2022-11-26 15:50:08,414 開始Eval
+2022-11-26 15:50:10,137 Eval結束，縂耗時1.6687605381011963s，batch_num为17，平均耗时0.09816238459418802s
+2022-11-26 15:50:10,162 Eval結束，縂耗時1.7489938735961914s
+2022-11-26 15:50:10,164 ***** Eval results *****
+2022-11-26 15:50:10,165   eval_loss = 0.9251355037969702
+2022-11-26 15:50:10,166   mcc = 0.5251347112164407
+2022-11-26 15:53:46,136 The args: Namespace(data_dir='CoLA', teacher_model=None, student_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output', task_name='CoLA', output_dir='/data/home/mc25653/Pretrained-Language-Model/TinyBERT/eval_output', cache_dir='', max_seq_length=64, do_eval=True, do_lower_case=True, train_batch_size=32, eval_batch_size=32, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=True, seed=42, gradient_accumulation_steps=1, aug_train=False, eval_step=50, pred_distill=False, data_url='', temperature=1.0)
+2022-11-26 15:53:46,163 device: cpu n_gpu: 0
+2022-11-26 15:53:46,232 Writing example 0 of 527
+2022-11-26 15:53:46,234 *** Example ***
+2022-11-26 15:53:46,236 guid: dev-0
+2022-11-26 15:53:46,237 tokens: [CLS] the sailors rode the breeze clear of the rocks . [SEP]
+2022-11-26 15:53:46,238 input_ids: 101 1103 12428 8335 1103 10647 2330 1104 1103 5753 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:53:46,239 input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:53:46,242 segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2022-11-26 15:53:46,244 label: 1
+2022-11-26 15:53:46,245 label_id: 1
+2022-11-26 15:53:46,340 Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022-11-26 15:53:46,678 Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT/Base_output/pytorch_model.bin
+2022-11-26 15:53:46,747 loading model...
+2022-11-26 15:53:46,811 done!
+2022-11-26 15:53:46,819 ***** Running evaluation *****
+2022-11-26 15:53:46,845   Num examples = 527
+2022-11-26 15:53:46,848   Batch size = 32
+2022-11-26 15:53:46,851 開始Eval
+2022-11-26 15:53:46,853 開始Eval
+2022-11-26 15:53:48,766 Eval結束，縂耗時1.8493075370788574s，batch_num为17，平均耗时0.10878279629875631s
+2022-11-26 15:53:48,779 Eval結束，縂耗時1.9286997318267822s
+2022-11-26 15:53:48,780 ***** Eval results *****
+2022-11-26 15:53:48,804   eval_loss = 0.9251355037969702
+2022-11-26 15:53:48,806   mcc = 0.5251347112164407
