@@ -1,0 +1,1849 @@
+STOP PMEMD Terminated Abnormally!
+
+  Unit    5 Error on OPEN: md2.in                                                                                                                                                                                                                                                          
+11/21/2022 15:52:25 - INFO - __main__ -   args:Namespace(pregenerated_data=PosixPath('/data/home/mc25653/Pretrained-Language-Model/TinyBERT_p/output/output'), teacher_model='/data/home/mc25653/Pretrained-Language-Model/TinyBERT_p/bert-base-cased', student_model='student_model_config', output_dir='general_student_model_without_P', max_seq_length=128, reduce_memory=False, do_eval=False, do_lower_case=True, train_batch_size=16, eval_batch_size=8, learning_rate=5e-05, weight_decay=0.0001, num_train_epochs=3.0, warmup_proportion=0.1, no_cuda=False, local_rank=-1, seed=42, gradient_accumulation_steps=1, fp16=False, continue_train=False, eval_step=1000, data_url='')
+11/21/2022 15:52:26 - INFO - __main__ -   device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+11/21/2022 15:52:26 - INFO - transformer.modeling_without_bert_pooler -   Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "initializer_range": 0.02,
+  "intermediate_size": 1248,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 4,
+  "pooler_fc_size": 312,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+11/21/2022 15:52:27 - INFO - transformer.modeling -   Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pre_trained": "",
+  "training": "",
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+11/21/2022 15:52:29 - INFO - transformer.modeling -   Loading model /data/home/mc25653/Pretrained-Language-Model/TinyBERT_p/bert-base-cased/pytorch_model.bin
+11/21/2022 15:52:30 - INFO - transformer.modeling -   loading model...
+11/21/2022 15:52:30 - INFO - transformer.modeling -   done!
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.embeddings.word_embeddings.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 9046752
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.embeddings.position_embeddings.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 159744
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.embeddings.token_type_embeddings.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 624
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.embeddings.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.embeddings.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.self.query.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.self.query.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.self.key.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.self.key.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.self.value.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.self.value.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.attention.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.intermediate.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.intermediate.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 1248
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.0.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.self.query.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.self.query.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.self.key.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.self.key.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.self.value.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.self.value.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.attention.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.intermediate.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.intermediate.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 1248
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.1.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.self.query.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.self.query.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.self.key.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.self.key.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.self.value.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.self.value.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.attention.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.intermediate.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.intermediate.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 1248
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.2.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.self.query.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.self.query.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.self.key.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.self.key.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.self.value.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.self.value.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.attention.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.intermediate.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.intermediate.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 1248
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.output.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 389376
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.output.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.output.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: bert.encoder.layer.3.output.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: cls.predictions.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 28996
+11/21/2022 15:52:38 - INFO - __main__ -   n: cls.predictions.transform.dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 97344
+11/21/2022 15:52:38 - INFO - __main__ -   n: cls.predictions.transform.dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: cls.predictions.transform.LayerNorm.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: cls.predictions.transform.LayerNorm.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 312
+11/21/2022 15:52:38 - INFO - __main__ -   n: cls.seq_relationship.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 624
+11/21/2022 15:52:38 - INFO - __main__ -   n: cls.seq_relationship.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 2
+11/21/2022 15:52:38 - INFO - __main__ -   n: fit_dense.weight
+11/21/2022 15:52:38 - INFO - __main__ -   p: 239616
+11/21/2022 15:52:38 - INFO - __main__ -   n: fit_dense.bias
+11/21/2022 15:52:38 - INFO - __main__ -   p: 768
+11/21/2022 15:52:38 - INFO - __main__ -   Total parameters: 14264766
+11/21/2022 15:52:38 - INFO - root -   ***** Running training *****
+11/21/2022 15:52:38 - INFO - root -     Num examples = 3009266
+11/21/2022 15:52:38 - INFO - root -     Batch size = 16
+11/21/2022 15:52:38 - INFO - root -     Num steps = 188079
+Epoch:   0%|          | 0/3 [00:00<?, ?it/s]11/21/2022 15:52:38 - INFO - __main__ -   training_path: /data/home/mc25653/Pretrained-Language-Model/TinyBERT_p/output/output
+11/21/2022 15:52:38 - INFO - __main__ -   data_file: /data/home/mc25653/Pretrained-Language-Model/TinyBERT_p/output/output/epoch_0.json
+11/21/2022 15:52:38 - INFO - __main__ -   metrics_file: /data/home/mc25653/Pretrained-Language-Model/TinyBERT_p/output/output/epoch_0_metrics.json
+/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py:142: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  input_masks = np.zeros(shape=(num_samples, seq_len), dtype=np.bool)
+/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py:143: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  segment_ids = np.zeros(shape=(num_samples, seq_len), dtype=np.bool)
+/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py:145: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  is_nexts = np.zeros(shape=(num_samples,), dtype=np.bool)
+11/21/2022 15:52:39 - INFO - root -   Loading training examples for epoch 0
+
+Training examples:   0%|          | 0/1003474 [00:00<?, ?it/s][A/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py:87: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  input_array = np.zeros(max_seq_length, dtype=np.int)
+/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py:90: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  mask_array = np.zeros(max_seq_length, dtype=np.bool)
+/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py:93: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  segment_array = np.zeros(max_seq_length, dtype=np.bool)
+/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py:96: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  lm_label_array = np.full(max_seq_length, dtype=np.int, fill_value=-1)
+
+Training examples:   0%|          | 565/1003474 [00:00<02:57, 5646.03it/s][A
+Training examples:   0%|          | 1183/1003474 [00:00<02:48, 5958.42it/s][A
+Training examples:   0%|          | 1821/1003474 [00:00<02:42, 6148.82it/s][A
+Training examples:   0%|          | 2442/1003474 [00:00<02:42, 6169.79it/s][A
+Training examples:   0%|          | 3072/1003474 [00:00<02:41, 6212.99it/s][A
+Training examples:   0%|          | 3753/1003474 [00:00<02:35, 6414.60it/s][A
+Training examples:   0%|          | 4395/1003474 [00:00<02:40, 6237.77it/s][A
+Training examples:   1%|          | 5034/1003474 [00:00<02:38, 6282.42it/s][A
+Training examples:   1%|          | 5685/1003474 [00:00<02:37, 6351.90it/s][A
+Training examples:   1%|          | 6321/1003474 [00:01<02:37, 6340.30it/s][A
+Training examples:   1%|          | 6956/1003474 [00:01<02:38, 6304.20it/s][A
+Training examples:   1%|          | 7587/1003474 [00:01<02:39, 6227.39it/s][A
+Training examples:   1%|          | 8211/1003474 [00:01<02:40, 6194.00it/s][A
+Training examples:   1%|          | 8831/1003474 [00:01<02:45, 6027.34it/s][A
+Training examples:   1%|          | 9435/1003474 [00:01<02:45, 6007.47it/s][A
+Training examples:   1%|          | 10066/1003474 [00:01<02:42, 6095.68it/s][A
+Training examples:   1%|          | 10693/1003474 [00:01<02:41, 6145.29it/s][A
+Training examples:   1%|          | 11315/1003474 [00:01<02:40, 6166.71it/s][A
+Training examples:   1%|          | 11972/1003474 [00:01<02:37, 6284.83it/s][A
+Training examples:   1%|▏         | 12641/1003474 [00:02<02:34, 6403.99it/s][A
+Training examples:   1%|▏         | 13282/1003474 [00:02<02:35, 6348.54it/s][A
+Training examples:   1%|▏         | 13918/1003474 [00:02<02:37, 6273.35it/s][A
+Training examples:   1%|▏         | 14546/1003474 [00:02<02:39, 6200.79it/s][A
+Training examples:   2%|▏         | 15168/1003474 [00:02<02:39, 6206.19it/s][A
+Training examples:   2%|▏         | 15789/1003474 [00:02<02:41, 6133.86it/s][A
+Training examples:   2%|▏         | 16416/1003474 [00:02<02:39, 6173.29it/s][A
+Training examples:   2%|▏         | 17034/1003474 [00:02<02:40, 6158.04it/s][A
+Training examples:   2%|▏         | 17650/1003474 [00:02<02:41, 6115.83it/s][A
+Training examples:   2%|▏         | 18262/1003474 [00:02<02:42, 6076.89it/s][A
+Training examples:   2%|▏         | 18884/1003474 [00:03<02:40, 6116.89it/s][A
+Training examples:   2%|▏         | 19520/1003474 [00:03<02:39, 6187.12it/s][A
+Training examples:   2%|▏         | 20139/1003474 [00:03<02:39, 6156.89it/s][A
+Training examples:   2%|▏         | 20772/1003474 [00:03<02:38, 6206.83it/s][A
+Training examples:   2%|▏         | 21393/1003474 [00:03<02:39, 6168.08it/s][A
+Training examples:   2%|▏         | 22010/1003474 [00:03<02:39, 6160.25it/s][A
+Training examples:   2%|▏         | 22633/1003474 [00:03<02:38, 6179.17it/s][A
+Training examples:   2%|▏         | 23328/1003474 [00:03<02:33, 6405.40it/s][A
+Training examples:   2%|▏         | 23969/1003474 [00:03<02:39, 6158.09it/s][A
+Training examples:   2%|▏         | 24617/1003474 [00:03<02:36, 6249.14it/s][A
+Training examples:   3%|▎         | 25244/1003474 [00:04<02:36, 6235.86it/s][A
+Training examples:   3%|▎         | 25869/1003474 [00:04<02:38, 6165.10it/s][A
+Training examples:   3%|▎         | 26495/1003474 [00:04<02:37, 6192.67it/s][A
+Training examples:   3%|▎         | 27115/1003474 [00:04<02:43, 5972.58it/s][A
+Training examples:   3%|▎         | 27715/1003474 [00:04<02:44, 5920.71it/s][A
+Training examples:   3%|▎         | 28309/1003474 [00:04<02:45, 5888.32it/s][A
+Training examples:   3%|▎         | 28899/1003474 [00:04<02:46, 5869.95it/s][A
+Training examples:   3%|▎         | 29487/1003474 [00:04<02:49, 5749.94it/s][A
+Training examples:   3%|▎         | 30076/1003474 [00:04<02:48, 5789.09it/s][A
+Training examples:   3%|▎         | 30685/1003474 [00:05<02:45, 5875.10it/s][A
+Training examples:   3%|▎         | 31305/1003474 [00:05<02:42, 5970.59it/s][A
+Training examples:   3%|▎         | 31913/1003474 [00:05<02:41, 6002.03it/s][A
+Training examples:   3%|▎         | 32528/1003474 [00:05<02:40, 6043.41it/s][A
+Training examples:   3%|▎         | 33133/1003474 [00:05<02:40, 6044.90it/s][A
+Training examples:   3%|▎         | 33750/1003474 [00:05<02:39, 6080.76it/s][A
+Training examples:   3%|▎         | 34486/1003474 [00:05<02:30, 6451.19it/s][A
+Training examples:   4%|▎         | 35132/1003474 [00:05<02:32, 6329.09it/s][A
+Training examples:   4%|▎         | 35766/1003474 [00:05<02:33, 6303.33it/s][A
+Training examples:   4%|▎         | 36397/1003474 [00:05<02:36, 6171.55it/s][A
+Training examples:   4%|▎         | 37046/1003474 [00:06<02:34, 6262.25it/s][A
+Training examples:   4%|▍         | 37673/1003474 [00:06<02:36, 6185.28it/s][A
+Training examples:   4%|▍         | 38293/1003474 [00:06<02:36, 6173.97it/s][A
+Training examples:   4%|▍         | 38911/1003474 [00:06<02:39, 6059.80it/s][A
+Training examples:   4%|▍         | 39541/1003474 [00:06<02:37, 6129.73it/s][A
+Training examples:   4%|▍         | 40194/1003474 [00:06<02:34, 6247.49it/s][A
+Training examples:   4%|▍         | 40829/1003474 [00:06<02:33, 6277.51it/s][A
+Training examples:   4%|▍         | 41505/1003474 [00:06<02:29, 6419.05it/s][A
+Training examples:   4%|▍         | 42148/1003474 [00:06<02:30, 6382.71it/s][A
+Training examples:   4%|▍         | 42796/1003474 [00:06<02:29, 6410.86it/s][A
+Training examples:   4%|▍         | 43438/1003474 [00:07<02:32, 6314.80it/s][A
+Training examples:   4%|▍         | 44070/1003474 [00:07<02:33, 6256.81it/s][A
+Training examples:   4%|▍         | 44703/1003474 [00:07<02:32, 6276.22it/s][A
+Training examples:   5%|▍         | 45331/1003474 [00:07<02:34, 6183.09it/s][A
+Training examples:   5%|▍         | 45960/1003474 [00:07<02:34, 6212.57it/s][A
+Training examples:   5%|▍         | 46587/1003474 [00:07<02:33, 6228.74it/s][A
+Training examples:   5%|▍         | 47232/1003474 [00:07<02:31, 6294.20it/s][A
+Training examples:   5%|▍         | 47862/1003474 [00:07<02:33, 6224.75it/s][A
+Training examples:   5%|▍         | 48491/1003474 [00:07<02:32, 6241.93it/s][A
+Training examples:   5%|▍         | 49116/1003474 [00:07<02:35, 6151.58it/s][A
+Training examples:   5%|▍         | 49769/1003474 [00:08<02:32, 6262.62it/s][A
+Training examples:   5%|▌         | 50396/1003474 [00:08<02:36, 6077.57it/s][A
+Training examples:   5%|▌         | 51006/1003474 [00:08<02:37, 6041.34it/s][A
+Training examples:   5%|▌         | 51666/1003474 [00:08<02:33, 6203.87it/s][A
+Training examples:   5%|▌         | 52322/1003474 [00:08<02:30, 6307.17it/s][A
+Training examples:   5%|▌         | 53255/1003474 [00:08<02:11, 7201.09it/s][A
+Training examples:   5%|▌         | 53977/1003474 [00:08<02:17, 6908.68it/s][A
+Training examples:   5%|▌         | 54672/1003474 [00:08<02:19, 6788.01it/s][A
+Training examples:   6%|▌         | 55354/1003474 [00:08<02:24, 6557.44it/s][A
+Training examples:   6%|▌         | 56013/1003474 [00:09<02:26, 6474.88it/s][A
+Training examples:   6%|▌         | 56663/1003474 [00:09<02:27, 6408.54it/s][A
+Training examples:   6%|▌         | 57328/1003474 [00:09<02:26, 6476.08it/s][A
+Training examples:   6%|▌         | 57977/1003474 [00:09<02:40, 5882.13it/s][A
+Training examples:   6%|▌         | 58638/1003474 [00:09<02:35, 6078.22it/s][A
+Training examples:   6%|▌         | 59265/1003474 [00:09<02:34, 6131.08it/s][A
+Training examples:   6%|▌         | 59908/1003474 [00:09<02:31, 6216.45it/s][A
+Training examples:   6%|▌         | 60567/1003474 [00:09<02:29, 6324.24it/s][A
+Training examples:   6%|▌         | 61221/1003474 [00:09<02:27, 6386.82it/s][A
+Training examples:   6%|▌         | 61919/1003474 [00:09<02:23, 6561.41it/s][A
+Training examples:   6%|▌         | 62578/1003474 [00:10<02:31, 6207.09it/s][A
+Training examples:   6%|▋         | 63249/1003474 [00:10<02:28, 6349.37it/s][A
+Training examples:   6%|▋         | 63890/1003474 [00:10<02:27, 6365.85it/s][A
+Training examples:   6%|▋         | 64530/1003474 [00:10<02:27, 6367.00it/s][A
+Training examples:   6%|▋         | 65169/1003474 [00:10<02:28, 6311.67it/s][A
+Training examples:   7%|▋         | 65802/1003474 [00:10<02:28, 6312.96it/s][A
+Training examples:   7%|▋         | 66435/1003474 [00:10<02:29, 6273.52it/s][A
+Training examples:   7%|▋         | 67064/1003474 [00:10<02:32, 6148.39it/s][A
+Training examples:   7%|▋         | 67680/1003474 [00:10<02:36, 5974.61it/s][A
+Training examples:   7%|▋         | 68279/1003474 [00:10<02:36, 5977.59it/s][A
+Training examples:   7%|▋         | 68927/1003474 [00:11<02:32, 6122.78it/s][A
+Training examples:   7%|▋         | 69559/1003474 [00:11<02:31, 6178.96it/s][A
+Training examples:   7%|▋         | 70236/1003474 [00:11<02:26, 6352.41it/s][A
+Training examples:   7%|▋         | 70873/1003474 [00:11<02:37, 5919.63it/s][A
+Training examples:   7%|▋         | 71484/1003474 [00:11<02:36, 5970.88it/s][A
+Training examples:   7%|▋         | 72161/1003474 [00:11<02:30, 6200.22it/s][A
+Training examples:   7%|▋         | 72786/1003474 [00:11<02:30, 6170.55it/s][A
+Training examples:   7%|▋         | 73406/1003474 [00:11<02:32, 6112.99it/s][A
+Training examples:   7%|▋         | 74020/1003474 [00:11<02:32, 6107.87it/s][A
+Training examples:   7%|▋         | 74706/1003474 [00:12<02:26, 6327.81it/s][A
+Training examples:   8%|▊         | 75341/1003474 [00:12<02:29, 6206.92it/s][A
+Training examples:   8%|▊         | 76043/1003474 [00:12<02:23, 6443.44it/s][A
+Training examples:   8%|▊         | 76689/1003474 [00:12<02:36, 5920.18it/s][A
+Training examples:   8%|▊         | 77326/1003474 [00:12<02:33, 6045.24it/s][A
+Training examples:   8%|▊         | 77960/1003474 [00:12<02:31, 6126.98it/s][A
+Training examples:   8%|▊         | 78580/1003474 [00:12<02:30, 6147.21it/s][A
+Training examples:   8%|▊         | 79246/1003474 [00:12<02:26, 6294.70it/s][A
+Training examples:   8%|▊         | 79879/1003474 [00:12<02:26, 6301.28it/s][A
+Training examples:   8%|▊         | 80548/1003474 [00:12<02:23, 6415.51it/s][A
+Training examples:   8%|▊         | 81192/1003474 [00:13<02:24, 6384.61it/s][A
+Training examples:   8%|▊         | 81832/1003474 [00:13<02:24, 6367.54it/s][A
+Training examples:   8%|▊         | 82473/1003474 [00:13<02:24, 6377.84it/s][A
+Training examples:   8%|▊         | 83112/1003474 [00:13<02:27, 6225.32it/s][A
+Training examples:   8%|▊         | 83765/1003474 [00:13<02:25, 6314.31it/s][A
+Training examples:   8%|▊         | 84398/1003474 [00:13<02:25, 6305.80it/s][A
+Training examples:   8%|▊         | 85036/1003474 [00:13<02:25, 6326.22it/s][A
+Training examples:   9%|▊         | 85670/1003474 [00:13<02:26, 6269.59it/s][A
+Training examples:   9%|▊         | 86298/1003474 [00:13<02:30, 6091.02it/s][A
+Training examples:   9%|▊         | 86909/1003474 [00:13<02:30, 6072.12it/s][A
+Training examples:   9%|▊         | 87568/1003474 [00:14<02:27, 6221.27it/s][A
+Training examples:   9%|▉         | 88196/1003474 [00:14<02:26, 6235.60it/s][A
+Training examples:   9%|▉         | 88850/1003474 [00:14<02:24, 6325.11it/s][A
+Training examples:   9%|▉         | 89484/1003474 [00:14<02:30, 6067.64it/s][A
+Training examples:   9%|▉         | 90094/1003474 [00:14<02:30, 6057.60it/s][A
+Training examples:   9%|▉         | 90743/1003474 [00:14<02:27, 6181.40it/s][A
+Training examples:   9%|▉         | 91383/1003474 [00:14<02:26, 6243.98it/s][A
+Training examples:   9%|▉         | 92030/1003474 [00:14<02:24, 6308.46it/s][A
+Training examples:   9%|▉         | 92662/1003474 [00:14<02:26, 6221.49it/s][A
+Training examples:   9%|▉         | 93289/1003474 [00:15<02:25, 6235.28it/s][A
+Training examples:   9%|▉         | 93914/1003474 [00:15<02:28, 6133.07it/s][A
+Training examples:   9%|▉         | 94584/1003474 [00:15<02:24, 6298.68it/s][A
+Training examples:   9%|▉         | 95215/1003474 [00:15<02:27, 6170.23it/s][A
+Training examples:  10%|▉         | 95882/1003474 [00:15<02:23, 6316.00it/s][A
+Training examples:  10%|▉         | 96515/1003474 [00:15<02:25, 6252.79it/s][A
+Training examples:  10%|▉         | 97142/1003474 [00:15<02:36, 5809.24it/s][A
+Training examples:  10%|▉         | 97763/1003474 [00:15<02:32, 5919.71it/s][A
+Training examples:  10%|▉         | 98392/1003474 [00:15<02:30, 6025.12it/s][A
+Training examples:  10%|▉         | 99039/1003474 [00:15<02:26, 6154.08it/s][A
+Training examples:  10%|▉         | 99739/1003474 [00:16<02:21, 6401.35it/s][A
+Training examples:  10%|█         | 100383/1003474 [00:16<02:21, 6372.21it/s][A
+Training examples:  10%|█         | 101023/1003474 [00:16<02:22, 6313.09it/s][A
+Training examples:  10%|█         | 101656/1003474 [00:16<02:25, 6207.54it/s][A
+Training examples:  10%|█         | 102282/1003474 [00:16<02:24, 6220.39it/s][A
+Training examples:  10%|█         | 102926/1003474 [00:16<02:23, 6283.73it/s][A
+Training examples:  10%|█         | 103595/1003474 [00:16<02:20, 6401.17it/s][A
+Training examples:  10%|█         | 104243/1003474 [00:16<02:19, 6423.26it/s][A
+Training examples:  10%|█         | 104886/1003474 [00:16<02:22, 6300.36it/s][A
+Training examples:  11%|█         | 105517/1003474 [00:16<02:23, 6273.45it/s][A
+Training examples:  11%|█         | 106159/1003474 [00:17<02:22, 6314.31it/s][A
+Training examples:  11%|█         | 106816/1003474 [00:17<02:20, 6389.29it/s][A
+Training examples:  11%|█         | 107477/1003474 [00:17<02:18, 6453.73it/s][A
+Training examples:  11%|█         | 108123/1003474 [00:17<02:20, 6360.06it/s][A
+Training examples:  11%|█         | 108760/1003474 [00:17<02:21, 6338.05it/s][A
+Training examples:  11%|█         | 109395/1003474 [00:17<02:22, 6272.76it/s][A
+Training examples:  11%|█         | 110025/1003474 [00:17<02:22, 6280.47it/s][A
+Training examples:  11%|█         | 110654/1003474 [00:17<02:22, 6258.57it/s][A
+Training examples:  11%|█         | 111290/1003474 [00:17<02:21, 6286.32it/s][A
+Training examples:  11%|█         | 111919/1003474 [00:17<02:22, 6268.46it/s][A
+Training examples:  11%|█         | 112585/1003474 [00:18<02:19, 6384.88it/s][A
+Training examples:  11%|█▏        | 113249/1003474 [00:18<02:17, 6459.97it/s][A
+Training examples:  11%|█▏        | 113896/1003474 [00:18<02:21, 6273.21it/s][A
+Training examples:  11%|█▏        | 114525/1003474 [00:18<02:23, 6214.74it/s][A
+Training examples:  11%|█▏        | 115148/1003474 [00:18<02:23, 6173.73it/s][A
+Training examples:  12%|█▏        | 115775/1003474 [00:18<02:23, 6200.79it/s][A
+Training examples:  12%|█▏        | 116401/1003474 [00:18<02:22, 6216.86it/s][A
+Training examples:  12%|█▏        | 117043/1003474 [00:18<02:21, 6276.97it/s][A
+Training examples:  12%|█▏        | 117672/1003474 [00:18<02:21, 6238.31it/s][A
+Training examples:  12%|█▏        | 118297/1003474 [00:19<02:26, 6046.83it/s][A
+Training examples:  12%|█▏        | 118953/1003474 [00:19<02:22, 6195.59it/s][A
+Training examples:  12%|█▏        | 119576/1003474 [00:19<02:22, 6205.15it/s][A
+Training examples:  12%|█▏        | 120198/1003474 [00:19<02:24, 6096.21it/s][A
+Training examples:  12%|█▏        | 120809/1003474 [00:19<02:26, 6042.59it/s][A
+Training examples:  12%|█▏        | 121428/1003474 [00:19<02:24, 6085.69it/s][A
+Training examples:  12%|█▏        | 122038/1003474 [00:19<02:25, 6074.58it/s][A
+Training examples:  12%|█▏        | 122675/1003474 [00:19<02:22, 6161.07it/s][A
+Training examples:  12%|█▏        | 123315/1003474 [00:19<02:21, 6230.93it/s][A
+Training examples:  12%|█▏        | 123963/1003474 [00:19<02:19, 6303.48it/s][A
+Training examples:  12%|█▏        | 124594/1003474 [00:20<02:21, 6219.57it/s][A
+Training examples:  12%|█▏        | 125273/1003474 [00:20<02:17, 6387.69it/s][A
+Training examples:  13%|█▎        | 125913/1003474 [00:20<02:20, 6230.38it/s][A
+Training examples:  13%|█▎        | 126538/1003474 [00:20<02:26, 5988.80it/s][A
+Training examples:  13%|█▎        | 127140/1003474 [00:20<02:28, 5901.88it/s][A
+Training examples:  13%|█▎        | 127732/1003474 [00:20<02:33, 5722.60it/s][A
+Training examples:  13%|█▎        | 128361/1003474 [00:20<02:28, 5883.42it/s][A
+Training examples:  13%|█▎        | 128952/1003474 [00:20<02:30, 5823.83it/s][A
+Training examples:  13%|█▎        | 129568/1003474 [00:20<02:27, 5920.65it/s][A
+Training examples:  13%|█▎        | 130201/1003474 [00:20<02:24, 6037.34it/s][A
+Training examples:  13%|█▎        | 130806/1003474 [00:21<02:51, 5094.00it/s][A
+Training examples:  13%|█▎        | 131402/1003474 [00:21<02:43, 5320.67it/s][A
+Training examples:  13%|█▎        | 131967/1003474 [00:21<02:41, 5409.95it/s][A
+Training examples:  13%|█▎        | 132533/1003474 [00:21<02:38, 5478.21it/s][A
+Training examples:  13%|█▎        | 133129/1003474 [00:21<02:35, 5614.86it/s][A
+Training examples:  13%|█▎        | 133753/1003474 [00:21<02:30, 5794.47it/s][A
+Training examples:  13%|█▎        | 134340/1003474 [00:21<02:31, 5754.74it/s][A
+Training examples:  13%|█▎        | 134928/1003474 [00:21<02:30, 5788.89it/s][A
+Training examples:  14%|█▎        | 135524/1003474 [00:21<02:28, 5838.30it/s][A
+Training examples:  14%|█▎        | 136129/1003474 [00:22<02:26, 5900.44it/s][A
+Training examples:  14%|█▎        | 136734/1003474 [00:22<02:25, 5943.35it/s][A
+Training examples:  14%|█▎        | 137352/1003474 [00:22<02:24, 6012.36it/s][A
+Training examples:  14%|█▎        | 137955/1003474 [00:22<02:39, 5440.02it/s][A
+Training examples:  14%|█▍        | 138562/1003474 [00:22<02:34, 5614.05it/s][A
+Training examples:  14%|█▍        | 139148/1003474 [00:22<02:32, 5681.77it/s][A
+Training examples:  14%|█▍        | 139772/1003474 [00:22<02:27, 5841.76it/s][A
+Training examples:  14%|█▍        | 140364/1003474 [00:22<02:27, 5864.18it/s][A
+Training examples:  14%|█▍        | 140958/1003474 [00:22<02:26, 5884.28it/s][A
+Training examples:  14%|█▍        | 141565/1003474 [00:22<02:25, 5937.03it/s][A
+Training examples:  14%|█▍        | 142184/1003474 [00:23<02:23, 6010.21it/s][A
+Training examples:  14%|█▍        | 142826/1003474 [00:23<02:20, 6131.26it/s][A
+Training examples:  14%|█▍        | 143441/1003474 [00:23<02:20, 6127.16it/s][A
+Training examples:  14%|█▍        | 144085/1003474 [00:23<02:18, 6218.61it/s][A
+Training examples:  14%|█▍        | 144726/1003474 [00:23<02:16, 6275.42it/s][A
+Training examples:  14%|█▍        | 145354/1003474 [00:23<02:18, 6174.44it/s][A
+Training examples:  15%|█▍        | 145973/1003474 [00:23<02:20, 6104.01it/s][A
+Training examples:  15%|█▍        | 146584/1003474 [00:23<02:24, 5938.57it/s][A
+Training examples:  15%|█▍        | 147179/1003474 [00:23<02:26, 5857.90it/s][A
+Training examples:  15%|█▍        | 147794/1003474 [00:24<02:24, 5941.18it/s][A
+Training examples:  15%|█▍        | 148523/1003474 [00:24<02:14, 6334.44it/s][A
+Training examples:  15%|█▍        | 149158/1003474 [00:24<02:17, 6199.42it/s][A
+Training examples:  15%|█▍        | 149780/1003474 [00:24<02:19, 6122.25it/s][A
+Training examples:  15%|█▍        | 150438/1003474 [00:24<02:16, 6252.43it/s][A
+Training examples:  15%|█▌        | 151073/1003474 [00:24<02:15, 6280.30it/s][A
+Training examples:  15%|█▌        | 151726/1003474 [00:24<02:14, 6353.30it/s][A
+Training examples:  15%|█▌        | 152363/1003474 [00:24<02:14, 6341.98it/s][A
+Training examples:  15%|█▌        | 153019/1003474 [00:24<02:12, 6406.48it/s][A
+Training examples:  15%|█▌        | 153661/1003474 [00:24<02:13, 6371.42it/s][A
+Training examples:  15%|█▌        | 154323/1003474 [00:25<02:11, 6444.55it/s][A
+Training examples:  15%|█▌        | 154968/1003474 [00:25<02:12, 6388.37it/s][A
+Training examples:  16%|█▌        | 155608/1003474 [00:25<02:13, 6356.13it/s][A
+Training examples:  16%|█▌        | 156244/1003474 [00:25<02:16, 6191.97it/s][A
+Training examples:  16%|█▌        | 156877/1003474 [00:25<02:15, 6230.24it/s][A
+Training examples:  16%|█▌        | 157501/1003474 [00:25<02:17, 6132.80it/s][A
+Training examples:  16%|█▌        | 158133/1003474 [00:25<02:16, 6187.12it/s][A
+Training examples:  16%|█▌        | 158769/1003474 [00:25<02:15, 6235.23it/s][A
+Training examples:  16%|█▌        | 159394/1003474 [00:25<02:16, 6163.15it/s][A
+Training examples:  16%|█▌        | 160101/1003474 [00:25<02:11, 6427.87it/s][A
+Training examples:  16%|█▌        | 160745/1003474 [00:26<02:14, 6288.05it/s][A
+Training examples:  16%|█▌        | 161375/1003474 [00:26<02:13, 6286.31it/s][A
+Training examples:  16%|█▌        | 162005/1003474 [00:26<02:16, 6178.59it/s][A
+Training examples:  16%|█▌        | 162624/1003474 [00:26<02:17, 6111.57it/s][A
+Training examples:  16%|█▋        | 163239/1003474 [00:26<02:17, 6121.95it/s][A
+Training examples:  16%|█▋        | 163862/1003474 [00:26<02:16, 6152.12it/s][A
+Training examples:  16%|█▋        | 164497/1003474 [00:26<02:15, 6209.48it/s][A
+Training examples:  16%|█▋        | 165119/1003474 [00:26<02:15, 6209.38it/s][A
+Training examples:  17%|█▋        | 165741/1003474 [00:26<02:21, 5929.21it/s][A
+Training examples:  17%|█▋        | 166366/1003474 [00:26<02:19, 6019.87it/s][A
+Training examples:  17%|█▋        | 167038/1003474 [00:27<02:14, 6222.94it/s][A
+Training examples:  17%|█▋        | 167663/1003474 [00:27<02:15, 6166.99it/s][A
+Training examples:  17%|█▋        | 168316/1003474 [00:27<02:13, 6273.06it/s][A
+Training examples:  17%|█▋        | 168945/1003474 [00:27<02:13, 6255.75it/s][A
+Training examples:  17%|█▋        | 169611/1003474 [00:27<02:10, 6371.93it/s][A
+Training examples:  17%|█▋        | 170421/1003474 [00:27<02:01, 6883.08it/s][A
+Training examples:  17%|█▋        | 171111/1003474 [00:27<02:08, 6481.89it/s][A
+Training examples:  17%|█▋        | 171765/1003474 [00:27<02:08, 6496.87it/s][A
+Training examples:  17%|█▋        | 172419/1003474 [00:27<02:10, 6359.30it/s][A
+Training examples:  17%|█▋        | 173076/1003474 [00:28<02:09, 6418.48it/s][A
+Training examples:  17%|█▋        | 173721/1003474 [00:28<02:11, 6310.09it/s][A
+Training examples:  17%|█▋        | 174362/1003474 [00:28<02:10, 6338.23it/s][A
+Training examples:  17%|█▋        | 174998/1003474 [00:28<02:12, 6241.50it/s][A
+Training examples:  18%|█▊        | 175624/1003474 [00:28<02:15, 6122.89it/s][A
+Training examples:  18%|█▊        | 176258/1003474 [00:28<02:13, 6184.90it/s][A
+Training examples:  18%|█▊        | 176901/1003474 [00:28<02:12, 6253.99it/s][A
+Training examples:  18%|█▊        | 177550/1003474 [00:28<02:10, 6321.55it/s][A
+Training examples:  18%|█▊        | 178183/1003474 [00:28<02:12, 6243.10it/s][A
+Training examples:  18%|█▊        | 178836/1003474 [00:28<02:10, 6327.12it/s][A
+Training examples:  18%|█▊        | 179470/1003474 [00:29<02:13, 6175.29it/s][A
+Training examples:  18%|█▊        | 180132/1003474 [00:29<02:10, 6303.23it/s][A
+Training examples:  18%|█▊        | 180764/1003474 [00:29<02:10, 6286.71it/s][A
+Training examples:  18%|█▊        | 181444/1003474 [00:29<02:07, 6438.20it/s][A
+Training examples:  18%|█▊        | 182089/1003474 [00:29<02:09, 6366.76it/s][A
+Training examples:  18%|█▊        | 182727/1003474 [00:29<02:08, 6369.94it/s][A
+Training examples:  18%|█▊        | 183379/1003474 [00:29<02:07, 6411.79it/s][A
+Training examples:  18%|█▊        | 184036/1003474 [00:29<02:06, 6455.75it/s][A
+Training examples:  18%|█▊        | 184682/1003474 [00:29<02:06, 6455.12it/s][A
+Training examples:  18%|█▊        | 185330/1003474 [00:29<02:06, 6462.31it/s][A
+Training examples:  19%|█▊        | 185981/1003474 [00:30<02:06, 6476.31it/s][A
+Training examples:  19%|█▊        | 186629/1003474 [00:30<02:06, 6455.34it/s][A
+Training examples:  19%|█▊        | 187338/1003474 [00:30<02:02, 6643.38it/s][A
+Training examples:  19%|█▊        | 188003/1003474 [00:30<02:06, 6441.00it/s][A
+Training examples:  19%|█▉        | 188649/1003474 [00:30<02:07, 6410.57it/s][A
+Training examples:  19%|█▉        | 189291/1003474 [00:30<02:08, 6325.40it/s][A
+Training examples:  19%|█▉        | 189945/1003474 [00:30<02:07, 6385.51it/s][A
+Training examples:  19%|█▉        | 190585/1003474 [00:30<02:10, 6247.23it/s][A
+Training examples:  19%|█▉        | 191231/1003474 [00:30<02:08, 6309.11it/s][A
+Training examples:  19%|█▉        | 191863/1003474 [00:30<02:11, 6187.88it/s][A
+Training examples:  19%|█▉        | 192483/1003474 [00:31<02:12, 6139.13it/s][A
+Training examples:  19%|█▉        | 193098/1003474 [00:31<02:20, 5780.54it/s][A
+Training examples:  19%|█▉        | 193702/1003474 [00:31<02:18, 5852.43it/s][A
+Training examples:  19%|█▉        | 194346/1003474 [00:31<02:14, 6019.51it/s][A
+Training examples:  19%|█▉        | 194957/1003474 [00:31<02:13, 6045.05it/s][A
+Training examples:  19%|█▉        | 195605/1003474 [00:31<02:10, 6170.33it/s][A
+Training examples:  20%|█▉        | 196224/1003474 [00:31<02:11, 6154.90it/s][A
+Training examples:  20%|█▉        | 196876/1003474 [00:31<02:08, 6260.01it/s][A
+Training examples:  20%|█▉        | 197504/1003474 [00:31<02:08, 6247.88it/s][A
+Training examples:  20%|█▉        | 198174/1003474 [00:32<02:06, 6379.13it/s][A
+Training examples:  20%|█▉        | 198813/1003474 [00:32<02:06, 6348.13it/s][A
+Training examples:  20%|█▉        | 199449/1003474 [00:32<02:08, 6263.80it/s][A
+Training examples:  20%|█▉        | 200076/1003474 [00:32<02:08, 6252.90it/s][A
+Training examples:  20%|██        | 200702/1003474 [00:32<02:10, 6136.58it/s][A
+Training examples:  20%|██        | 201317/1003474 [00:32<02:25, 5514.43it/s][A
+Training examples:  20%|██        | 201898/1003474 [00:32<02:23, 5592.80it/s][A
+Training examples:  20%|██        | 202563/1003474 [00:32<02:16, 5889.00it/s][A
+Training examples:  20%|██        | 203186/1003474 [00:32<02:13, 5984.62it/s][A
+Training examples:  20%|██        | 203791/1003474 [00:32<02:13, 5978.67it/s][A
+Training examples:  20%|██        | 204394/1003474 [00:33<02:15, 5881.65it/s][A
+Training examples:  20%|██        | 205039/1003474 [00:33<02:12, 6045.77it/s][A
+Training examples:  20%|██        | 205666/1003474 [00:33<02:10, 6111.08it/s][A
+Training examples:  21%|██        | 206301/1003474 [00:33<02:08, 6181.14it/s][A
+Training examples:  21%|██        | 206921/1003474 [00:33<02:09, 6131.17it/s][A
+Training examples:  21%|██        | 207536/1003474 [00:33<02:38, 5031.04it/s][A
+Training examples:  21%|██        | 208176/1003474 [00:33<02:27, 5381.80it/s][A
+Training examples:  21%|██        | 208837/1003474 [00:33<02:19, 5711.44it/s][A
+Training examples:  21%|██        | 209433/1003474 [00:33<02:24, 5486.62it/s][A
+Training examples:  21%|██        | 210079/1003474 [00:34<02:17, 5751.54it/s][A
+Training examples:  21%|██        | 210699/1003474 [00:34<02:14, 5875.97it/s][A
+Training examples:  21%|██        | 211323/1003474 [00:34<02:12, 5979.05it/s][A
+Training examples:  21%|██        | 211930/1003474 [00:34<02:16, 5808.88it/s][A
+Training examples:  21%|██        | 212518/1003474 [00:34<02:17, 5734.13it/s][A
+Training examples:  21%|██        | 213097/1003474 [00:34<02:19, 5660.81it/s][A
+Training examples:  21%|██▏       | 213667/1003474 [00:34<02:20, 5610.01it/s][A
+Training examples:  21%|██▏       | 214231/1003474 [00:34<02:27, 5361.26it/s][A
+Training examples:  21%|██▏       | 214771/1003474 [00:34<02:28, 5313.18it/s][A
+Training examples:  21%|██▏       | 215316/1003474 [00:35<02:27, 5350.92it/s][A
+Training examples:  22%|██▏       | 215853/1003474 [00:35<02:27, 5331.97it/s][A
+Training examples:  22%|██▏       | 216446/1003474 [00:35<02:22, 5505.65it/s][A
+Training examples:  22%|██▏       | 217084/1003474 [00:35<02:16, 5760.99it/s][A
+Training examples:  22%|██▏       | 217676/1003474 [00:35<02:15, 5805.73it/s][A
+Training examples:  22%|██▏       | 218308/1003474 [00:35<02:11, 5955.20it/s][A
+Training examples:  22%|██▏       | 218905/1003474 [00:35<02:15, 5785.32it/s][A
+Training examples:  22%|██▏       | 219508/1003474 [00:35<02:13, 5854.96it/s][A
+Training examples:  22%|██▏       | 220095/1003474 [00:35<02:23, 5450.54it/s][A
+Training examples:  22%|██▏       | 220694/1003474 [00:35<02:19, 5601.70it/s][A
+Training examples:  22%|██▏       | 221299/1003474 [00:36<02:16, 5727.85it/s][A
+Training examples:  22%|██▏       | 221888/1003474 [00:36<02:15, 5774.17it/s][A
+Training examples:  22%|██▏       | 222503/1003474 [00:36<02:12, 5882.29it/s][A
+Training examples:  22%|██▏       | 223094/1003474 [00:36<02:14, 5789.58it/s][A
+Training examples:  22%|██▏       | 223684/1003474 [00:36<02:13, 5820.26it/s][A
+Training examples:  22%|██▏       | 224268/1003474 [00:36<02:16, 5702.97it/s][A
+Training examples:  22%|██▏       | 224866/1003474 [00:36<02:14, 5783.19it/s][A
+Training examples:  22%|██▏       | 225446/1003474 [00:36<02:15, 5749.71it/s][A
+Training examples:  23%|██▎       | 226065/1003474 [00:36<02:12, 5879.32it/s][A
+Training examples:  23%|██▎       | 226654/1003474 [00:36<02:12, 5843.80it/s][A
+Training examples:  23%|██▎       | 227252/1003474 [00:37<02:11, 5881.65it/s][A
+Training examples:  23%|██▎       | 227870/1003474 [00:37<02:09, 5970.00it/s][A
+Training examples:  23%|██▎       | 228468/1003474 [00:37<02:10, 5931.66it/s][A
+Training examples:  23%|██▎       | 229062/1003474 [00:37<02:10, 5931.99it/s][A
+Training examples:  23%|██▎       | 229659/1003474 [00:37<02:10, 5940.78it/s][A
+Training examples:  23%|██▎       | 230265/1003474 [00:37<02:09, 5973.39it/s][A
+Training examples:  23%|██▎       | 230863/1003474 [00:37<02:12, 5847.79it/s][A
+Training examples:  23%|██▎       | 231536/1003474 [00:37<02:06, 6106.70it/s][A
+Training examples:  23%|██▎       | 232148/1003474 [00:37<02:10, 5927.74it/s][A
+Training examples:  23%|██▎       | 232743/1003474 [00:38<02:14, 5726.19it/s][A
+Training examples:  23%|██▎       | 233378/1003474 [00:38<02:10, 5902.74it/s][A
+Training examples:  23%|██▎       | 233971/1003474 [00:38<02:10, 5886.43it/s][A
+Training examples:  23%|██▎       | 234564/1003474 [00:38<02:10, 5897.56it/s][A
+Training examples:  23%|██▎       | 235234/1003474 [00:38<02:05, 6130.91it/s][A
+Training examples:  24%|██▎       | 235892/1003474 [00:38<02:02, 6263.54it/s][A
+Training examples:  24%|██▎       | 236520/1003474 [00:38<02:04, 6174.44it/s][A
+Training examples:  24%|██▎       | 237139/1003474 [00:38<02:05, 6097.96it/s][A
+Training examples:  24%|██▎       | 237750/1003474 [00:38<02:05, 6086.67it/s][A
+Training examples:  24%|██▍       | 238414/1003474 [00:38<02:02, 6249.42it/s][A
+Training examples:  24%|██▍       | 239040/1003474 [00:39<02:04, 6144.34it/s][A
+Training examples:  24%|██▍       | 239669/1003474 [00:39<02:03, 6185.72it/s][A
+Training examples:  24%|██▍       | 240318/1003474 [00:39<02:01, 6275.40it/s][A
+Training examples:  24%|██▍       | 240954/1003474 [00:39<02:01, 6299.14it/s][A
+Training examples:  24%|██▍       | 241587/1003474 [00:39<02:00, 6306.82it/s][A
+Training examples:  24%|██▍       | 242226/1003474 [00:39<02:00, 6330.88it/s][A
+Training examples:  24%|██▍       | 242871/1003474 [00:39<01:59, 6365.56it/s][A
+Training examples:  24%|██▍       | 243508/1003474 [00:39<02:00, 6285.85it/s][A
+Training examples:  24%|██▍       | 244163/1003474 [00:39<01:59, 6363.30it/s][A
+Training examples:  24%|██▍       | 244800/1003474 [00:39<02:00, 6311.41it/s][A
+Training examples:  24%|██▍       | 245450/1003474 [00:40<01:59, 6364.30it/s][A
+Training examples:  25%|██▍       | 246087/1003474 [00:40<02:00, 6291.33it/s][A
+Training examples:  25%|██▍       | 246717/1003474 [00:40<02:00, 6288.13it/s][A
+Training examples:  25%|██▍       | 247347/1003474 [00:40<02:00, 6269.45it/s][A
+Training examples:  25%|██▍       | 247989/1003474 [00:40<01:59, 6313.44it/s][A
+Training examples:  25%|██▍       | 248621/1003474 [00:40<01:59, 6310.14it/s][A
+Training examples:  25%|██▍       | 249253/1003474 [00:40<02:03, 6130.70it/s][A
+Training examples:  25%|██▍       | 249871/1003474 [00:40<02:02, 6144.99it/s][A
+Training examples:  25%|██▍       | 250516/1003474 [00:40<02:00, 6233.28it/s][A
+Training examples:  25%|██▌       | 251216/1003474 [00:40<01:56, 6457.40it/s][A
+Training examples:  25%|██▌       | 251863/1003474 [00:41<01:58, 6357.34it/s][A
+Training examples:  25%|██▌       | 252500/1003474 [00:41<01:58, 6351.72it/s][A
+Training examples:  25%|██▌       | 253154/1003474 [00:41<01:57, 6406.60it/s][A
+Training examples:  25%|██▌       | 253871/1003474 [00:41<01:53, 6632.55it/s][A
+Training examples:  25%|██▌       | 254535/1003474 [00:41<01:54, 6518.35it/s][A
+Training examples:  25%|██▌       | 255188/1003474 [00:41<01:58, 6335.57it/s][A
+Training examples:  25%|██▌       | 255823/1003474 [00:41<01:59, 6263.55it/s][A
+Training examples:  26%|██▌       | 256451/1003474 [00:41<02:01, 6150.95it/s][A
+Training examples:  26%|██▌       | 257163/1003474 [00:41<01:56, 6428.61it/s][A
+Training examples:  26%|██▌       | 257808/1003474 [00:42<01:56, 6414.32it/s][A
+Training examples:  26%|██▌       | 258451/1003474 [00:42<02:06, 5869.65it/s][A
+Training examples:  26%|██▌       | 259085/1003474 [00:42<02:04, 5998.78it/s][A
+Training examples:  26%|██▌       | 259719/1003474 [00:42<02:02, 6093.87it/s][A
+Training examples:  26%|██▌       | 260336/1003474 [00:42<02:01, 6114.90it/s][A
+Training examples:  26%|██▌       | 260964/1003474 [00:42<02:00, 6161.80it/s][A
+Training examples:  26%|██▌       | 261624/1003474 [00:42<01:57, 6289.90it/s][A
+Training examples:  26%|██▌       | 262271/1003474 [00:42<01:56, 6342.44it/s][A
+Training examples:  26%|██▌       | 262907/1003474 [00:42<01:57, 6294.28it/s][A
+Training examples:  26%|██▋       | 263538/1003474 [00:42<01:58, 6265.11it/s][A
+Training examples:  26%|██▋       | 264216/1003474 [00:43<01:55, 6417.39it/s][A
+Training examples:  26%|██▋       | 264859/1003474 [00:43<01:57, 6297.01it/s][A
+Training examples:  26%|██▋       | 265533/1003474 [00:43<01:54, 6425.91it/s][A
+Training examples:  27%|██▋       | 266177/1003474 [00:43<02:06, 5807.18it/s][A
+Training examples:  27%|██▋       | 266851/1003474 [00:43<02:01, 6063.38it/s][A
+Training examples:  27%|██▋       | 267468/1003474 [00:43<02:01, 6059.98it/s][A
+Training examples:  27%|██▋       | 268082/1003474 [00:43<02:03, 5975.80it/s][A
+Training examples:  27%|██▋       | 268713/1003474 [00:43<02:01, 6069.68it/s][A
+Training examples:  27%|██▋       | 269350/1003474 [00:43<01:59, 6154.02it/s][A
+Training examples:  27%|██▋       | 269984/1003474 [00:43<01:58, 6206.17it/s][A
+Training examples:  27%|██▋       | 270622/1003474 [00:44<01:57, 6257.00it/s][A
+Training examples:  27%|██▋       | 271250/1003474 [00:44<01:57, 6244.77it/s][A
+Training examples:  27%|██▋       | 271876/1003474 [00:44<01:59, 6145.33it/s][A
+Training examples:  27%|██▋       | 272568/1003474 [00:44<01:54, 6371.50it/s][A
+Training examples:  27%|██▋       | 273207/1003474 [00:44<01:55, 6334.27it/s][A
+Training examples:  27%|██▋       | 273842/1003474 [00:44<01:56, 6283.73it/s][A
+Training examples:  27%|██▋       | 274471/1003474 [00:44<01:57, 6180.31it/s][A
+Training examples:  27%|██▋       | 275090/1003474 [00:44<01:58, 6148.25it/s][A
+Training examples:  27%|██▋       | 275706/1003474 [00:44<01:58, 6131.70it/s][A
+Training examples:  28%|██▊       | 276373/1003474 [00:44<01:55, 6290.15it/s][A
+Training examples:  28%|██▊       | 277003/1003474 [00:45<02:05, 5786.37it/s][A
+Training examples:  28%|██▊       | 277695/1003474 [00:45<01:58, 6103.16it/s][A
+Training examples:  28%|██▊       | 278322/1003474 [00:45<01:57, 6149.64it/s][A
+Training examples:  28%|██▊       | 278943/1003474 [00:45<01:57, 6154.43it/s][A
+Training examples:  28%|██▊       | 279574/1003474 [00:45<01:56, 6197.35it/s][A
+Training examples:  28%|██▊       | 280206/1003474 [00:45<01:56, 6232.46it/s][A
+Training examples:  28%|██▊       | 280864/1003474 [00:45<01:54, 6332.67it/s][A
+Training examples:  28%|██▊       | 281499/1003474 [00:45<01:57, 6147.31it/s][A
+Training examples:  28%|██▊       | 282116/1003474 [00:45<02:00, 6008.12it/s][A
+Training examples:  28%|██▊       | 282780/1003474 [00:46<01:56, 6188.74it/s][A
+Training examples:  28%|██▊       | 283449/1003474 [00:46<01:53, 6334.98it/s][A
+Training examples:  28%|██▊       | 284085/1003474 [00:46<01:53, 6339.06it/s][A
+Training examples:  28%|██▊       | 284721/1003474 [00:46<01:54, 6275.56it/s][A
+Training examples:  28%|██▊       | 285379/1003474 [00:46<01:52, 6362.79it/s][A
+Training examples:  29%|██▊       | 286017/1003474 [00:46<01:53, 6308.73it/s][A
+Training examples:  29%|██▊       | 286649/1003474 [00:46<01:53, 6290.33it/s][A
+Training examples:  29%|██▊       | 287279/1003474 [00:46<02:03, 5815.39it/s][A
+Training examples:  29%|██▊       | 287919/1003474 [00:46<01:59, 5978.79it/s][A
+Training examples:  29%|██▉       | 288523/1003474 [00:46<01:59, 5973.73it/s][A
+Training examples:  29%|██▉       | 289125/1003474 [00:47<01:59, 5986.67it/s][A
+Training examples:  29%|██▉       | 289727/1003474 [00:47<02:01, 5852.42it/s][A
+Training examples:  29%|██▉       | 290345/1003474 [00:47<01:59, 5947.24it/s][A
+Training examples:  29%|██▉       | 290970/1003474 [00:47<01:58, 6033.64it/s][A
+Training examples:  29%|██▉       | 291576/1003474 [00:47<01:59, 5970.02it/s][A
+Training examples:  29%|██▉       | 292224/1003474 [00:47<01:56, 6116.86it/s][A
+Training examples:  29%|██▉       | 292837/1003474 [00:47<01:57, 6071.75it/s][A
+Training examples:  29%|██▉       | 293491/1003474 [00:47<01:54, 6208.59it/s][A
+Training examples:  29%|██▉       | 294113/1003474 [00:47<01:54, 6202.49it/s][A
+Training examples:  29%|██▉       | 294734/1003474 [00:48<01:56, 6108.39it/s][A
+Training examples:  29%|██▉       | 295382/1003474 [00:48<01:53, 6214.99it/s][A
+Training examples:  29%|██▉       | 296005/1003474 [00:48<02:02, 5784.37it/s][A
+Training examples:  30%|██▉       | 296643/1003474 [00:48<01:58, 5951.74it/s][A
+Training examples:  30%|██▉       | 297244/1003474 [00:48<02:06, 5599.77it/s][A
+Training examples:  30%|██▉       | 297839/1003474 [00:48<02:03, 5695.72it/s][A
+Training examples:  30%|██▉       | 298418/1003474 [00:48<02:03, 5721.13it/s][A
+Training examples:  30%|██▉       | 299087/1003474 [00:48<01:57, 6000.68it/s][A
+Training examples:  30%|██▉       | 299718/1003474 [00:48<01:55, 6089.00it/s][A
+Training examples:  30%|██▉       | 300330/1003474 [00:48<01:57, 5983.46it/s][A
+Training examples:  30%|██▉       | 300931/1003474 [00:49<01:57, 5969.99it/s][A
+Training examples:  30%|███       | 301588/1003474 [00:49<01:54, 6144.57it/s][A
+Training examples:  30%|███       | 302204/1003474 [00:49<01:55, 6050.95it/s][A
+Training examples:  30%|███       | 302852/1003474 [00:49<01:53, 6175.94it/s][A
+Training examples:  30%|███       | 303471/1003474 [00:49<01:55, 6054.69it/s][A
+Training examples:  30%|███       | 304078/1003474 [00:49<01:55, 6035.29it/s][A
+Training examples:  30%|███       | 304698/1003474 [00:49<01:54, 6081.07it/s][A
+Training examples:  30%|███       | 305307/1003474 [00:49<01:54, 6080.53it/s][A
+Training examples:  30%|███       | 305953/1003474 [00:49<01:52, 6191.03it/s][A
+Training examples:  31%|███       | 306573/1003474 [00:49<02:00, 5766.44it/s][A
+Training examples:  31%|███       | 307234/1003474 [00:50<01:55, 6005.24it/s][A
+Training examples:  31%|███       | 307841/1003474 [00:50<01:57, 5932.24it/s][A
+Training examples:  31%|███       | 308485/1003474 [00:50<01:54, 6076.98it/s][A
+Training examples:  31%|███       | 309096/1003474 [00:50<01:57, 5896.52it/s][A
+Training examples:  31%|███       | 309770/1003474 [00:50<01:53, 6138.91it/s][A
+Training examples:  31%|███       | 310388/1003474 [00:50<01:53, 6079.98it/s][A
+Training examples:  31%|███       | 310999/1003474 [00:50<01:54, 6037.34it/s][A
+Training examples:  31%|███       | 311605/1003474 [00:50<01:55, 6002.95it/s][A
+Training examples:  31%|███       | 312252/1003474 [00:50<01:53, 6069.92it/s][A
+Training examples:  31%|███       | 312971/1003474 [00:51<01:47, 6396.31it/s][A
+Training examples:  31%|███▏      | 313612/1003474 [00:51<01:48, 6330.74it/s][A
+Training examples:  31%|███▏      | 314247/1003474 [00:51<01:51, 6175.95it/s][A
+Training examples:  31%|███▏      | 314866/1003474 [00:51<01:52, 6139.37it/s][A
+Training examples:  31%|███▏      | 315481/1003474 [00:51<01:52, 6130.96it/s][A
+Training examples:  32%|███▏      | 316095/1003474 [00:51<02:01, 5641.55it/s][A
+Training examples:  32%|███▏      | 316775/1003474 [00:51<01:55, 5962.58it/s][A
+Training examples:  32%|███▏      | 317409/1003474 [00:51<01:53, 6069.18it/s][A
+Training examples:  32%|███▏      | 318066/1003474 [00:51<01:50, 6211.17it/s][A
+Training examples:  32%|███▏      | 318692/1003474 [00:51<01:51, 6149.18it/s][A
+Training examples:  32%|███▏      | 319311/1003474 [00:52<01:52, 6103.73it/s][A
+Training examples:  32%|███▏      | 319924/1003474 [00:52<01:53, 6007.27it/s][A
+Training examples:  32%|███▏      | 320527/1003474 [00:52<01:55, 5926.18it/s][A
+Training examples:  32%|███▏      | 321127/1003474 [00:52<01:54, 5945.55it/s][A
+Training examples:  32%|███▏      | 321736/1003474 [00:52<01:53, 5986.22it/s][A
+Training examples:  32%|███▏      | 322336/1003474 [00:52<01:54, 5960.05it/s][A
+Training examples:  32%|███▏      | 322955/1003474 [00:52<01:52, 6025.25it/s][A
+Training examples:  32%|███▏      | 323597/1003474 [00:52<01:50, 6141.89it/s][A
+Training examples:  32%|███▏      | 324212/1003474 [00:52<01:51, 6077.05it/s][A
+Training examples:  32%|███▏      | 324864/1003474 [00:53<01:49, 6205.63it/s][A
+Training examples:  32%|███▏      | 325486/1003474 [00:53<01:50, 6139.57it/s][A
+Training examples:  33%|███▎      | 326141/1003474 [00:53<01:48, 6259.31it/s][A
+Training examples:  33%|███▎      | 326768/1003474 [00:53<01:58, 5700.25it/s][A
+Training examples:  33%|███▎      | 327392/1003474 [00:53<01:55, 5848.34it/s][A
+Training examples:  33%|███▎      | 328034/1003474 [00:53<01:52, 6009.21it/s][A
+Training examples:  33%|███▎      | 328670/1003474 [00:53<01:50, 6109.24it/s][A
+Training examples:  33%|███▎      | 329345/1003474 [00:53<01:47, 6294.32it/s][A
+Training examples:  33%|███▎      | 329979/1003474 [00:53<01:49, 6136.57it/s][A
+Training examples:  33%|███▎      | 330608/1003474 [00:53<01:48, 6180.15it/s][A
+Training examples:  33%|███▎      | 331229/1003474 [00:54<01:49, 6114.56it/s][A
+Training examples:  33%|███▎      | 331843/1003474 [00:54<01:49, 6120.13it/s][A
+Training examples:  33%|███▎      | 332473/1003474 [00:54<01:48, 6171.09it/s][A
+Training examples:  33%|███▎      | 333092/1003474 [00:54<01:49, 6131.93it/s][A
+Training examples:  33%|███▎      | 333706/1003474 [00:54<01:49, 6128.41it/s][A
+Training examples:  33%|███▎      | 334320/1003474 [00:54<01:49, 6089.65it/s][A
+Training examples:  33%|███▎      | 334957/1003474 [00:54<01:48, 6171.87it/s][A
+Training examples:  33%|███▎      | 335575/1003474 [00:54<01:50, 6071.30it/s][A
+Training examples:  34%|███▎      | 336278/1003474 [00:54<01:45, 6352.45it/s][A
+Training examples:  34%|███▎      | 336915/1003474 [00:54<01:45, 6332.72it/s][A
+Training examples:  34%|███▎      | 337549/1003474 [00:55<01:51, 5946.58it/s][A
+Training examples:  34%|███▎      | 338149/1003474 [00:55<01:51, 5949.87it/s][A
+Training examples:  34%|███▍      | 338748/1003474 [00:55<01:52, 5884.77it/s][A
+Training examples:  34%|███▍      | 339370/1003474 [00:55<01:51, 5979.76it/s][A
+Training examples:  34%|███▍      | 339985/1003474 [00:55<01:50, 6028.11it/s][A
+Training examples:  34%|███▍      | 340590/1003474 [00:55<01:51, 5969.59it/s][A
+Training examples:  34%|███▍      | 341189/1003474 [00:55<01:51, 5950.49it/s][A
+Training examples:  34%|███▍      | 341790/1003474 [00:55<01:50, 5966.08it/s][A
+Training examples:  34%|███▍      | 342399/1003474 [00:55<01:50, 6000.25it/s][A
+Training examples:  34%|███▍      | 343116/1003474 [00:55<01:44, 6345.48it/s][A
+Training examples:  34%|███▍      | 343752/1003474 [00:56<01:47, 6154.75it/s][A
+Training examples:  34%|███▍      | 344425/1003474 [00:56<01:44, 6321.92it/s][A
+Training examples:  34%|███▍      | 345059/1003474 [00:56<01:47, 6140.66it/s][A
+Training examples:  34%|███▍      | 345678/1003474 [00:56<01:46, 6152.91it/s][A
+Training examples:  35%|███▍      | 346295/1003474 [00:56<01:47, 6107.06it/s][A
+Training examples:  35%|███▍      | 346907/1003474 [00:56<01:50, 5949.97it/s][A
+Training examples:  35%|███▍      | 347515/1003474 [00:56<01:49, 5985.35it/s][A
+Training examples:  35%|███▍      | 348115/1003474 [00:56<01:56, 5630.26it/s][A
+Training examples:  35%|███▍      | 348749/1003474 [00:56<01:52, 5828.62it/s][A
+Training examples:  35%|███▍      | 349372/1003474 [00:57<01:50, 5943.25it/s][A
+Training examples:  35%|███▍      | 350079/1003474 [00:57<01:44, 6269.85it/s][A
+Training examples:  35%|███▍      | 350710/1003474 [00:57<01:46, 6115.68it/s][A
+Training examples:  35%|███▌      | 351325/1003474 [00:57<01:47, 6070.61it/s][A
+Training examples:  35%|███▌      | 351957/1003474 [00:57<01:46, 6139.92it/s][A
+Training examples:  35%|███▌      | 352610/1003474 [00:57<01:44, 6252.87it/s][A
+Training examples:  35%|███▌      | 353237/1003474 [00:57<01:46, 6119.16it/s][A
+Training examples:  35%|███▌      | 353851/1003474 [00:57<01:48, 6004.59it/s][A
+Training examples:  35%|███▌      | 354482/1003474 [00:57<01:46, 6092.67it/s][A
+Training examples:  35%|███▌      | 355133/1003474 [00:57<01:44, 6213.39it/s][A
+Training examples:  35%|███▌      | 355774/1003474 [00:58<01:43, 6270.99it/s][A
+Training examples:  36%|███▌      | 356402/1003474 [00:58<01:44, 6164.97it/s][A
+Training examples:  36%|███▌      | 357041/1003474 [00:58<01:43, 6230.77it/s][A
+Training examples:  36%|███▌      | 357665/1003474 [00:58<01:44, 6174.02it/s][A
+Training examples:  36%|███▌      | 358319/1003474 [00:58<01:42, 6279.17it/s][A
+Training examples:  36%|███▌      | 358948/1003474 [00:58<01:43, 6207.26it/s][A
+Training examples:  36%|███▌      | 359570/1003474 [00:58<01:44, 6176.84it/s][A
+Training examples:  36%|███▌      | 360189/1003474 [00:58<01:44, 6175.52it/s][A
+Training examples:  36%|███▌      | 360807/1003474 [00:58<01:44, 6157.94it/s][A
+Training examples:  36%|███▌      | 361423/1003474 [00:59<01:49, 5847.49it/s][A
+Training examples:  36%|███▌      | 362042/1003474 [00:59<01:47, 5944.67it/s][A
+Training examples:  36%|███▌      | 362673/1003474 [00:59<01:45, 6050.48it/s][A
+Training examples:  36%|███▌      | 363323/1003474 [00:59<01:43, 6179.13it/s][A
+Training examples:  36%|███▋      | 363943/1003474 [00:59<01:45, 6090.20it/s][A
+Training examples:  36%|███▋      | 364554/1003474 [00:59<01:45, 6071.21it/s][A
+Training examples:  36%|███▋      | 365163/1003474 [00:59<01:46, 5970.04it/s][A
+Training examples:  36%|███▋      | 365777/1003474 [00:59<01:45, 6017.99it/s][A
+Training examples:  37%|███▋      | 366423/1003474 [00:59<01:43, 6145.23it/s][A
+Training examples:  37%|███▋      | 367048/1003474 [00:59<01:43, 6173.26it/s][A
+Training examples:  37%|███▋      | 367666/1003474 [01:00<01:43, 6146.04it/s][A
+Training examples:  37%|███▋      | 368283/1003474 [01:00<01:43, 6150.05it/s][A
+Training examples:  37%|███▋      | 368933/1003474 [01:00<01:41, 6253.33it/s][A
+Training examples:  37%|███▋      | 369559/1003474 [01:00<01:41, 6235.62it/s][A
+Training examples:  37%|███▋      | 370183/1003474 [01:00<01:42, 6191.30it/s][A
+Training examples:  37%|███▋      | 370803/1003474 [01:00<01:44, 6071.01it/s][A
+Training examples:  37%|███▋      | 371411/1003474 [01:00<01:44, 6069.96it/s][A
+Training examples:  37%|███▋      | 372019/1003474 [01:00<01:50, 5712.05it/s][A
+Training examples:  37%|███▋      | 372595/1003474 [01:00<01:50, 5695.73it/s][A
+Training examples:  37%|███▋      | 373267/1003474 [01:00<01:45, 5989.73it/s][A
+Training examples:  37%|███▋      | 373880/1003474 [01:01<01:44, 6029.01it/s][A
+Training examples:  37%|███▋      | 374486/1003474 [01:01<01:47, 5871.35it/s][A
+Training examples:  37%|███▋      | 375076/1003474 [01:01<01:47, 5867.22it/s][A
+Training examples:  37%|███▋      | 375716/1003474 [01:01<01:44, 6021.29it/s][A
+Training examples:  38%|███▊      | 376329/1003474 [01:01<01:43, 6050.98it/s][A
+Training examples:  38%|███▊      | 376940/1003474 [01:01<01:43, 6066.94it/s][A
+Training examples:  38%|███▊      | 377548/1003474 [01:01<01:43, 6057.53it/s][A
+Training examples:  38%|███▊      | 378155/1003474 [01:01<01:45, 5935.34it/s][A
+Training examples:  38%|███▊      | 378784/1003474 [01:01<01:43, 6038.54it/s][A
+Training examples:  38%|███▊      | 379389/1003474 [01:01<01:44, 5961.99it/s][A
+Training examples:  38%|███▊      | 380086/1003474 [01:02<01:39, 6257.64it/s][A
+Training examples:  38%|███▊      | 380713/1003474 [01:02<01:42, 6071.82it/s][A
+Training examples:  38%|███▊      | 381322/1003474 [01:02<01:44, 5950.36it/s][A
+Training examples:  38%|███▊      | 381919/1003474 [01:02<01:44, 5944.36it/s][A
+Training examples:  38%|███▊      | 382515/1003474 [01:02<01:51, 5562.44it/s][A
+Training examples:  38%|███▊      | 383100/1003474 [01:02<01:49, 5640.53it/s][A
+Training examples:  38%|███▊      | 383677/1003474 [01:02<01:49, 5677.18it/s][A
+Training examples:  38%|███▊      | 384328/1003474 [01:02<01:44, 5917.31it/s][A
+Training examples:  38%|███▊      | 384948/1003474 [01:02<01:43, 5999.60it/s][A
+Training examples:  38%|███▊      | 385551/1003474 [01:03<01:45, 5853.29it/s][A
+Training examples:  38%|███▊      | 386139/1003474 [01:03<01:46, 5823.24it/s][A
+Training examples:  39%|███▊      | 386803/1003474 [01:03<01:41, 6061.01it/s][A
+Training examples:  39%|███▊      | 387411/1003474 [01:03<01:42, 6002.57it/s][A
+Training examples:  39%|███▊      | 388013/1003474 [01:03<01:42, 5994.70it/s][A
+Training examples:  39%|███▊      | 388656/1003474 [01:03<01:40, 6120.74it/s][A
+Training examples:  39%|███▉      | 389315/1003474 [01:03<01:38, 6259.26it/s][A
+Training examples:  39%|███▉      | 389942/1003474 [01:03<01:40, 6110.23it/s][A
+Training examples:  39%|███▉      | 390555/1003474 [01:03<01:41, 6018.05it/s][A
+Training examples:  39%|███▉      | 391171/1003474 [01:03<01:41, 6057.08it/s][A
+Training examples:  39%|███▉      | 391778/1003474 [01:04<01:44, 5881.27it/s][A
+Training examples:  39%|███▉      | 392450/1003474 [01:04<01:39, 6122.86it/s][A
+Training examples:  39%|███▉      | 393080/1003474 [01:04<01:38, 6174.05it/s][A
+Training examples:  39%|███▉      | 393699/1003474 [01:04<01:46, 5734.92it/s][A
+Training examples:  39%|███▉      | 394280/1003474 [01:04<01:48, 5617.22it/s][A
+Training examples:  39%|███▉      | 394847/1003474 [01:04<01:48, 5621.91it/s][A
+Training examples:  39%|███▉      | 395427/1003474 [01:04<01:47, 5671.02it/s][A
+Training examples:  39%|███▉      | 396042/1003474 [01:04<01:44, 5809.66it/s][A
+Training examples:  40%|███▉      | 396660/1003474 [01:04<01:42, 5917.57it/s][A
+Training examples:  40%|███▉      | 397287/1003474 [01:05<01:40, 6020.23it/s][A
+Training examples:  40%|███▉      | 397951/1003474 [01:05<01:38, 6144.65it/s][A
+Training examples:  40%|███▉      | 398567/1003474 [01:05<01:39, 6084.59it/s][A
+Training examples:  40%|███▉      | 399321/1003474 [01:05<01:32, 6512.38it/s][A
+Training examples:  40%|███▉      | 399974/1003474 [01:05<01:38, 6112.22it/s][A
+Training examples:  40%|███▉      | 400591/1003474 [01:05<01:40, 6015.12it/s][A
+Training examples:  40%|███▉      | 401214/1003474 [01:05<01:39, 6075.71it/s][A
+Training examples:  40%|████      | 401872/1003474 [01:05<01:36, 6220.98it/s][A
+Training examples:  40%|████      | 402497/1003474 [01:05<01:44, 5773.71it/s][A
+Training examples:  40%|████      | 403154/1003474 [01:05<01:40, 5994.04it/s][A
+Training examples:  40%|████      | 403770/1003474 [01:06<01:39, 6040.17it/s][A
+Training examples:  40%|████      | 404389/1003474 [01:06<01:38, 6082.79it/s][A
+Training examples:  40%|████      | 405071/1003474 [01:06<01:35, 6295.89it/s][A
+Training examples:  40%|████      | 405704/1003474 [01:06<01:34, 6297.87it/s][A
+Training examples:  40%|████      | 406346/1003474 [01:06<01:34, 6333.18it/s][A
+Training examples:  41%|████      | 406981/1003474 [01:06<01:35, 6246.10it/s][A
+Training examples:  41%|████      | 407607/1003474 [01:06<01:37, 6136.17it/s][A
+Training examples:  41%|████      | 408222/1003474 [01:06<01:38, 6038.97it/s][A
+Training examples:  41%|████      | 408850/1003474 [01:06<01:37, 6106.32it/s][A
+Training examples:  41%|████      | 409476/1003474 [01:06<01:36, 6149.22it/s][A
+Training examples:  41%|████      | 410111/1003474 [01:07<01:35, 6206.04it/s][A
+Training examples:  41%|████      | 410733/1003474 [01:07<01:35, 6205.68it/s][A
+Training examples:  41%|████      | 411354/1003474 [01:07<01:38, 6008.87it/s][A
+Training examples:  41%|████      | 411961/1003474 [01:07<01:38, 6024.64it/s][A
+Training examples:  41%|████      | 412565/1003474 [01:07<01:45, 5606.74it/s][A
+Training examples:  41%|████      | 413143/1003474 [01:07<01:44, 5654.90it/s][A
+Training examples:  41%|████      | 413778/1003474 [01:07<01:40, 5853.56it/s][A
+Training examples:  41%|████▏     | 414427/1003474 [01:07<01:37, 6035.16it/s][A
+Training examples:  41%|████▏     | 415035/1003474 [01:07<01:37, 6036.91it/s][A
+Training examples:  41%|████▏     | 415642/1003474 [01:08<01:37, 6004.06it/s][A
+Training examples:  41%|████▏     | 416247/1003474 [01:08<01:37, 6014.92it/s][A
+Training examples:  42%|████▏     | 416868/1003474 [01:08<01:36, 6069.48it/s][A
+Training examples:  42%|████▏     | 417514/1003474 [01:08<01:34, 6182.73it/s][A
+Training examples:  42%|████▏     | 418134/1003474 [01:08<01:34, 6176.74it/s][A
+Training examples:  42%|████▏     | 418764/1003474 [01:08<01:34, 6213.35it/s][A
+Training examples:  42%|████▏     | 419386/1003474 [01:08<01:35, 6097.98it/s][A
+Training examples:  42%|████▏     | 420025/1003474 [01:08<01:34, 6181.52it/s][A
+Training examples:  42%|████▏     | 420644/1003474 [01:08<01:35, 6090.65it/s][A
+Training examples:  42%|████▏     | 421289/1003474 [01:08<01:33, 6196.17it/s][A
+Training examples:  42%|████▏     | 421910/1003474 [01:09<01:36, 6055.63it/s][A
+Training examples:  42%|████▏     | 422523/1003474 [01:09<01:35, 6076.70it/s][A
+Training examples:  42%|████▏     | 423132/1003474 [01:09<01:39, 5839.74it/s][A
+Training examples:  42%|████▏     | 423752/1003474 [01:09<01:37, 5941.02it/s][A
+Training examples:  42%|████▏     | 424349/1003474 [01:09<01:37, 5915.26it/s][A
+Training examples:  42%|████▏     | 424967/1003474 [01:09<01:36, 5992.07it/s][A
+Training examples:  42%|████▏     | 425581/1003474 [01:09<01:35, 6035.52it/s][A
+Training examples:  42%|████▏     | 426206/1003474 [01:09<01:34, 6098.55it/s][A
+Training examples:  43%|████▎     | 426851/1003474 [01:09<01:32, 6200.79it/s][A
+Training examples:  43%|████▎     | 427472/1003474 [01:09<01:34, 6083.80it/s][A
+Training examples:  43%|████▎     | 428090/1003474 [01:10<01:34, 6103.07it/s][A
+Training examples:  43%|████▎     | 428701/1003474 [01:10<01:36, 5963.74it/s][A
+Training examples:  43%|████▎     | 429299/1003474 [01:10<01:36, 5941.99it/s][A
+Training examples:  43%|████▎     | 429894/1003474 [01:10<01:37, 5877.08it/s][A
+Training examples:  43%|████▎     | 430534/1003474 [01:10<01:35, 6029.56it/s][A
+Training examples:  43%|████▎     | 431188/1003474 [01:10<01:32, 6179.49it/s][A
+Training examples:  43%|████▎     | 431807/1003474 [01:10<01:35, 6009.59it/s][A
+Training examples:  43%|████▎     | 432441/1003474 [01:10<01:33, 6103.60it/s][A
+Training examples:  43%|████▎     | 433053/1003474 [01:10<01:34, 6032.93it/s][A
+Training examples:  43%|████▎     | 433701/1003474 [01:10<01:32, 6163.31it/s][A
+Training examples:  43%|████▎     | 434319/1003474 [01:11<01:40, 5641.78it/s][A
+Training examples:  43%|████▎     | 434987/1003474 [01:11<01:35, 5929.68it/s][A
+Training examples:  43%|████▎     | 435607/1003474 [01:11<01:34, 6004.03it/s][A
+Training examples:  43%|████▎     | 436259/1003474 [01:11<01:32, 6151.11it/s][A
+Training examples:  44%|████▎     | 436890/1003474 [01:11<01:31, 6194.84it/s][A
+Training examples:  44%|████▎     | 437540/1003474 [01:11<01:30, 6283.14it/s][A
+Training examples:  44%|████▎     | 438171/1003474 [01:11<01:30, 6265.18it/s][A
+Training examples:  44%|████▎     | 438824/1003474 [01:11<01:29, 6341.54it/s][A
+Training examples:  44%|████▍     | 439460/1003474 [01:11<01:30, 6250.77it/s][A
+Training examples:  44%|████▍     | 440087/1003474 [01:12<01:30, 6205.03it/s][A
+Training examples:  44%|████▍     | 440709/1003474 [01:12<01:33, 5992.71it/s][A
+Training examples:  44%|████▍     | 441311/1003474 [01:12<01:33, 5982.99it/s][A
+Training examples:  44%|████▍     | 441973/1003474 [01:12<01:31, 6168.16it/s][A
+Training examples:  44%|████▍     | 442592/1003474 [01:12<01:31, 6102.57it/s][A
+Training examples:  44%|████▍     | 443204/1003474 [01:12<01:33, 5975.93it/s][A
+Training examples:  44%|████▍     | 443809/1003474 [01:12<01:33, 5997.01it/s][A
+Training examples:  44%|████▍     | 444437/1003474 [01:12<01:31, 6079.28it/s][A
+Training examples:  44%|████▍     | 445046/1003474 [01:12<01:38, 5681.91it/s][A
+Training examples:  44%|████▍     | 445682/1003474 [01:12<01:34, 5872.46it/s][A
+Training examples:  44%|████▍     | 446295/1003474 [01:13<01:33, 5944.05it/s][A
+Training examples:  45%|████▍     | 446920/1003474 [01:13<01:32, 6032.91it/s][A
+Training examples:  45%|████▍     | 447527/1003474 [01:13<01:32, 6039.81it/s][A
+Training examples:  45%|████▍     | 448134/1003474 [01:13<01:33, 5965.90it/s][A
+Training examples:  45%|████▍     | 448761/1003474 [01:13<01:31, 6053.37it/s][A
+Training examples:  45%|████▍     | 449368/1003474 [01:13<01:32, 5999.07it/s][A
+Training examples:  45%|████▍     | 450068/1003474 [01:13<01:27, 6293.70it/s][A
+Training examples:  45%|████▍     | 450699/1003474 [01:13<01:29, 6148.72it/s][A
+Training examples:  45%|████▍     | 451316/1003474 [01:13<01:29, 6138.31it/s][A
+Training examples:  45%|████▌     | 451937/1003474 [01:14<01:29, 6156.53it/s][A
+Training examples:  45%|████▌     | 452554/1003474 [01:14<01:29, 6150.48it/s][A
+Training examples:  45%|████▌     | 453178/1003474 [01:14<01:29, 6176.77it/s][A
+Training examples:  45%|████▌     | 453797/1003474 [01:14<01:29, 6153.71it/s][A
+Training examples:  45%|████▌     | 454442/1003474 [01:14<01:27, 6239.15it/s][A
+Training examples:  45%|████▌     | 455067/1003474 [01:14<01:29, 6119.46it/s][A
+Training examples:  45%|████▌     | 455711/1003474 [01:14<01:28, 6213.62it/s][A
+Training examples:  45%|████▌     | 456333/1003474 [01:14<01:36, 5676.66it/s][A
+Training examples:  46%|████▌     | 456998/1003474 [01:14<01:31, 5946.17it/s][A
+Training examples:  46%|████▌     | 457601/1003474 [01:14<01:31, 5934.44it/s][A
+Training examples:  46%|████▌     | 458277/1003474 [01:15<01:28, 6169.29it/s][A
+Training examples:  46%|████▌     | 458899/1003474 [01:15<01:28, 6138.89it/s][A
+Training examples:  46%|████▌     | 459517/1003474 [01:15<01:30, 6011.43it/s][A
+Training examples:  46%|████▌     | 460121/1003474 [01:15<01:32, 5881.11it/s][A
+Training examples:  46%|████▌     | 460712/1003474 [01:15<01:32, 5873.41it/s][A
+Training examples:  46%|████▌     | 461308/1003474 [01:15<01:31, 5896.13it/s][A
+Training examples:  46%|████▌     | 461921/1003474 [01:15<01:30, 5963.37it/s][A
+Training examples:  46%|████▌     | 462519/1003474 [01:15<01:31, 5915.01it/s][A
+Training examples:  46%|████▌     | 463112/1003474 [01:15<01:31, 5903.68it/s][A
+Training examples:  46%|████▌     | 463707/1003474 [01:15<01:31, 5915.90it/s][A
+Training examples:  46%|████▋     | 464328/1003474 [01:16<01:29, 6002.29it/s][A
+Training examples:  46%|████▋     | 464960/1003474 [01:16<01:28, 6096.49it/s][A
+Training examples:  46%|████▋     | 465596/1003474 [01:16<01:27, 6172.69it/s][A
+Training examples:  46%|████▋     | 466214/1003474 [01:16<01:32, 5823.97it/s][A
+Training examples:  47%|████▋     | 466811/1003474 [01:16<01:31, 5863.71it/s][A
+Training examples:  47%|████▋     | 467401/1003474 [01:16<01:31, 5838.09it/s][A
+Training examples:  47%|████▋     | 468056/1003474 [01:16<01:28, 6043.41it/s][A
+Training examples:  47%|████▋     | 468692/1003474 [01:16<01:27, 6134.53it/s][A
+Training examples:  47%|████▋     | 469342/1003474 [01:16<01:25, 6241.72it/s][A
+Training examples:  47%|████▋     | 469968/1003474 [01:16<01:26, 6182.94it/s][A
+Training examples:  47%|████▋     | 470639/1003474 [01:17<01:24, 6336.10it/s][A
+Training examples:  47%|████▋     | 471274/1003474 [01:17<01:25, 6219.28it/s][A
+Training examples:  47%|████▋     | 471945/1003474 [01:17<01:23, 6363.06it/s][A
+Training examples:  47%|████▋     | 472583/1003474 [01:17<01:25, 6202.10it/s][A
+Training examples:  47%|████▋     | 473213/1003474 [01:17<01:25, 6230.20it/s][A
+Training examples:  47%|████▋     | 473838/1003474 [01:17<01:26, 6135.58it/s][A
+Training examples:  47%|████▋     | 474453/1003474 [01:17<01:26, 6133.52it/s][A
+Training examples:  47%|████▋     | 475091/1003474 [01:17<01:25, 6204.14it/s][A
+Training examples:  47%|████▋     | 475753/1003474 [01:17<01:23, 6325.72it/s][A
+Training examples:  47%|████▋     | 476387/1003474 [01:18<01:23, 6280.32it/s][A
+Training examples:  48%|████▊     | 477016/1003474 [01:18<01:25, 6130.45it/s][A
+Training examples:  48%|████▊     | 477630/1003474 [01:18<01:30, 5787.42it/s][A
+Training examples:  48%|████▊     | 478236/1003474 [01:18<01:29, 5862.17it/s][A
+Training examples:  48%|████▊     | 478887/1003474 [01:18<01:26, 6047.88it/s][A
+Training examples:  48%|████▊     | 479495/1003474 [01:18<01:27, 5970.93it/s][A
+Training examples:  48%|████▊     | 480165/1003474 [01:18<01:24, 6180.83it/s][A
+Training examples:  48%|████▊     | 480792/1003474 [01:18<01:24, 6205.75it/s][A
+Training examples:  48%|████▊     | 481415/1003474 [01:18<01:24, 6155.02it/s][A
+Training examples:  48%|████▊     | 482032/1003474 [01:18<01:24, 6139.68it/s][A
+Training examples:  48%|████▊     | 482752/1003474 [01:19<01:20, 6450.49it/s][A
+Training examples:  48%|████▊     | 483411/1003474 [01:19<01:20, 6490.46it/s][A
+Training examples:  48%|████▊     | 484061/1003474 [01:19<01:20, 6450.14it/s][A
+Training examples:  48%|████▊     | 484715/1003474 [01:19<01:20, 6476.20it/s][A
+Training examples:  48%|████▊     | 485364/1003474 [01:19<01:21, 6366.27it/s][A
+Training examples:  48%|████▊     | 486010/1003474 [01:19<01:20, 6391.52it/s][A
+Training examples:  48%|████▊     | 486650/1003474 [01:19<01:22, 6258.42it/s][A
+Training examples:  49%|████▊     | 487327/1003474 [01:19<01:20, 6407.80it/s][A
+Training examples:  49%|████▊     | 487969/1003474 [01:19<01:27, 5902.02it/s][A
+Training examples:  49%|████▊     | 488629/1003474 [01:20<01:24, 6096.75it/s][A
+Training examples:  49%|████▉     | 489246/1003474 [01:20<01:24, 6082.11it/s][A
+Training examples:  49%|████▉     | 489860/1003474 [01:20<01:25, 5998.91it/s][A
+Training examples:  49%|████▉     | 490523/1003474 [01:20<01:23, 6179.28it/s][A
+Training examples:  49%|████▉     | 491159/1003474 [01:20<01:22, 6231.44it/s][A
+Training examples:  49%|████▉     | 491787/1003474 [01:20<01:21, 6243.86it/s][A
+Training examples:  49%|████▉     | 492414/1003474 [01:20<01:22, 6216.96it/s][A
+Training examples:  49%|████▉     | 493037/1003474 [01:20<01:22, 6178.68it/s][A
+Training examples:  49%|████▉     | 493656/1003474 [01:20<01:24, 6051.70it/s][A
+Training examples:  49%|████▉     | 494302/1003474 [01:20<01:22, 6170.23it/s][A
+Training examples:  49%|████▉     | 494921/1003474 [01:21<01:23, 6084.10it/s][A
+Training examples:  49%|████▉     | 495586/1003474 [01:21<01:21, 6249.23it/s][A
+Training examples:  49%|████▉     | 496212/1003474 [01:21<01:21, 6189.32it/s][A
+Training examples:  50%|████▉     | 496842/1003474 [01:21<01:21, 6221.00it/s][A
+Training examples:  50%|████▉     | 497465/1003474 [01:21<01:21, 6193.83it/s][A
+Training examples:  50%|████▉     | 498085/1003474 [01:21<01:21, 6174.59it/s][A
+Training examples:  50%|████▉     | 498703/1003474 [01:21<01:27, 5780.92it/s][A
+Training examples:  50%|████▉     | 499294/1003474 [01:21<01:26, 5815.49it/s][A
+Training examples:  50%|████▉     | 499938/1003474 [01:21<01:24, 5993.17it/s][A
+Training examples:  50%|████▉     | 500570/1003474 [01:21<01:22, 6087.93it/s][A
+Training examples:  50%|████▉     | 501220/1003474 [01:22<01:20, 6208.16it/s][A
+Training examples:  50%|█████     | 501843/1003474 [01:22<01:20, 6212.39it/s][A
+Training examples:  50%|█████     | 502498/1003474 [01:22<01:19, 6309.99it/s][A
+Training examples:  50%|█████     | 503131/1003474 [01:22<01:20, 6244.34it/s][A
+Training examples:  50%|█████     | 503757/1003474 [01:22<01:20, 6212.71it/s][A
+Training examples:  50%|█████     | 504379/1003474 [01:22<01:21, 6090.10it/s][A
+Training examples:  50%|█████     | 505056/1003474 [01:22<01:19, 6287.54it/s][A
+Training examples:  50%|█████     | 505686/1003474 [01:22<01:19, 6222.92it/s][A
+Training examples:  50%|█████     | 506336/1003474 [01:22<01:18, 6302.97it/s][A
+Training examples:  51%|█████     | 506968/1003474 [01:22<01:18, 6287.67it/s][A
+Training examples:  51%|█████     | 507598/1003474 [01:23<01:21, 6091.17it/s][A
+Training examples:  51%|█████     | 508209/1003474 [01:23<01:22, 6033.48it/s][A
+Training examples:  51%|█████     | 508814/1003474 [01:23<01:22, 5960.53it/s][A
+Training examples:  51%|█████     | 509411/1003474 [01:23<01:24, 5832.22it/s][A
+Training examples:  51%|█████     | 509996/1003474 [01:23<01:30, 5459.41it/s][A
+Training examples:  51%|█████     | 510686/1003474 [01:23<01:24, 5860.03it/s][A
+Training examples:  51%|█████     | 511301/1003474 [01:23<01:22, 5940.65it/s][A
+Training examples:  51%|█████     | 511927/1003474 [01:23<01:21, 6031.25it/s][A
+Training examples:  51%|█████     | 512537/1003474 [01:23<01:21, 6049.22it/s][A
+Training examples:  51%|█████     | 513185/1003474 [01:24<01:19, 6175.08it/s][A
+Training examples:  51%|█████     | 513835/1003474 [01:24<01:18, 6271.00it/s][A
+Training examples:  51%|█████▏    | 514468/1003474 [01:24<01:17, 6286.37it/s][A
+Training examples:  51%|█████▏    | 515103/1003474 [01:24<01:17, 6304.58it/s][A
+Training examples:  51%|█████▏    | 515735/1003474 [01:24<01:19, 6159.95it/s][A
+Training examples:  51%|█████▏    | 516353/1003474 [01:24<01:22, 5926.39it/s][A
+Training examples:  52%|█████▏    | 516949/1003474 [01:24<01:24, 5788.75it/s][A
+Training examples:  52%|█████▏    | 517530/1003474 [01:24<01:25, 5687.82it/s][A
+Training examples:  52%|█████▏    | 518101/1003474 [01:24<01:25, 5675.15it/s][A
+Training examples:  52%|█████▏    | 518716/1003474 [01:24<01:23, 5810.99it/s][A
+Training examples:  52%|█████▏    | 519311/1003474 [01:25<01:22, 5850.94it/s][A
+Training examples:  52%|█████▏    | 519897/1003474 [01:25<01:28, 5485.27it/s][A
+Training examples:  52%|█████▏    | 520451/1003474 [01:25<01:30, 5322.76it/s][A
+Training examples:  52%|█████▏    | 521044/1003474 [01:25<01:27, 5489.78it/s][A
+Training examples:  52%|█████▏    | 521655/1003474 [01:25<01:25, 5665.29it/s][A
+Training examples:  52%|█████▏    | 522253/1003474 [01:25<01:23, 5753.77it/s][A
+Training examples:  52%|█████▏    | 522832/1003474 [01:25<01:29, 5355.65it/s][A
+Training examples:  52%|█████▏    | 523411/1003474 [01:25<01:27, 5475.98it/s][A
+Training examples:  52%|█████▏    | 524021/1003474 [01:25<01:24, 5653.21it/s][A
+Training examples:  52%|█████▏    | 524606/1003474 [01:26<01:23, 5709.62it/s][A
+Training examples:  52%|█████▏    | 525261/1003474 [01:26<01:20, 5954.67it/s][A
+Training examples:  52%|█████▏    | 525860/1003474 [01:26<01:20, 5964.40it/s][A
+Training examples:  52%|█████▏    | 526549/1003474 [01:26<01:16, 6235.82it/s][A
+Training examples:  53%|█████▎    | 527175/1003474 [01:26<01:16, 6202.02it/s][A
+Training examples:  53%|█████▎    | 527822/1003474 [01:26<01:15, 6279.80it/s][A
+Training examples:  53%|█████▎    | 528451/1003474 [01:26<01:21, 5812.81it/s][A
+Training examples:  53%|█████▎    | 529093/1003474 [01:26<01:19, 5982.91it/s][A
+Training examples:  53%|█████▎    | 529781/1003474 [01:26<01:15, 6239.47it/s][A
+Training examples:  53%|█████▎    | 530411/1003474 [01:26<01:21, 5810.41it/s][A
+Training examples:  53%|█████▎    | 531119/1003474 [01:27<01:16, 6161.87it/s][A
+Training examples:  53%|█████▎    | 531745/1003474 [01:27<01:17, 6088.67it/s][A
+Training examples:  53%|█████▎    | 532361/1003474 [01:27<01:17, 6105.15it/s][A
+Training examples:  53%|█████▎    | 532986/1003474 [01:27<01:16, 6144.57it/s][A
+Training examples:  53%|█████▎    | 533639/1003474 [01:27<01:15, 6255.74it/s][A
+Training examples:  53%|█████▎    | 534268/1003474 [01:27<01:15, 6239.01it/s][A
+Training examples:  53%|█████▎    | 534906/1003474 [01:27<01:14, 6279.80it/s][A
+Training examples:  53%|█████▎    | 535536/1003474 [01:27<01:14, 6275.68it/s][A
+Training examples:  53%|█████▎    | 536166/1003474 [01:27<01:14, 6277.49it/s][A
+Training examples:  53%|█████▎    | 536795/1003474 [01:28<01:15, 6196.47it/s][A
+Training examples:  54%|█████▎    | 537416/1003474 [01:28<01:15, 6137.14it/s][A
+Training examples:  54%|█████▎    | 538031/1003474 [01:28<01:16, 6079.24it/s][A
+Training examples:  54%|█████▎    | 538640/1003474 [01:28<01:17, 5970.91it/s][A
+Training examples:  54%|█████▎    | 539238/1003474 [01:28<01:18, 5925.95it/s][A
+Training examples:  54%|█████▍    | 539831/1003474 [01:28<01:19, 5846.59it/s][A
+Training examples:  54%|█████▍    | 540448/1003474 [01:28<01:23, 5566.96it/s][A
+Training examples:  54%|█████▍    | 541022/1003474 [01:28<01:22, 5615.37it/s][A
+Training examples:  54%|█████▍    | 541649/1003474 [01:28<01:19, 5802.75it/s][A
+Training examples:  54%|█████▍    | 542308/1003474 [01:28<01:16, 6030.10it/s][A
+Training examples:  54%|█████▍    | 542958/1003474 [01:29<01:14, 6167.65it/s][A
+Training examples:  54%|█████▍    | 543577/1003474 [01:29<01:14, 6172.53it/s][A
+Training examples:  54%|█████▍    | 544196/1003474 [01:29<01:14, 6127.90it/s][A
+Training examples:  54%|█████▍    | 544887/1003474 [01:29<01:12, 6356.56it/s][A
+Training examples:  54%|█████▍    | 545524/1003474 [01:29<01:12, 6321.54it/s][A
+Training examples:  54%|█████▍    | 546157/1003474 [01:29<01:15, 6027.88it/s][A
+Training examples:  54%|█████▍    | 546763/1003474 [01:29<01:21, 5591.12it/s][A
+Training examples:  55%|█████▍    | 547330/1003474 [01:29<01:21, 5598.69it/s][A
+Training examples:  55%|█████▍    | 547982/1003474 [01:29<01:17, 5857.83it/s][A
+Training examples:  55%|█████▍    | 548592/1003474 [01:29<01:16, 5925.98it/s][A
+Training examples:  55%|█████▍    | 549253/1003474 [01:30<01:14, 6123.94it/s][A
+Training examples:  55%|█████▍    | 549878/1003474 [01:30<01:13, 6159.87it/s][A
+Training examples:  55%|█████▍    | 550534/1003474 [01:30<01:12, 6276.63it/s][A
+Training examples:  55%|█████▍    | 551164/1003474 [01:30<01:21, 5581.38it/s][A
+Training examples:  55%|█████▍    | 551740/1003474 [01:30<01:20, 5628.96it/s][A
+Training examples:  55%|█████▌    | 552344/1003474 [01:30<01:18, 5742.14it/s][A
+Training examples:  55%|█████▌    | 552927/1003474 [01:30<01:22, 5436.84it/s][A
+Training examples:  55%|█████▌    | 553519/1003474 [01:30<01:20, 5571.12it/s][A
+Training examples:  55%|█████▌    | 554173/1003474 [01:30<01:16, 5844.33it/s][A
+Training examples:  55%|█████▌    | 554764/1003474 [01:31<01:18, 5707.07it/s][A
+Training examples:  55%|█████▌    | 555340/1003474 [01:31<01:26, 5194.54it/s][A
+Training examples:  55%|█████▌    | 555977/1003474 [01:31<01:21, 5512.21it/s][A
+Training examples:  55%|█████▌    | 556629/1003474 [01:31<01:17, 5792.29it/s][A
+Training examples:  56%|█████▌    | 557219/1003474 [01:31<01:17, 5780.22it/s][A
+Training examples:  56%|█████▌    | 557827/1003474 [01:31<01:15, 5865.89it/s][A
+Training examples:  56%|█████▌    | 558427/1003474 [01:31<01:15, 5904.51it/s][A
+Training examples:  56%|█████▌    | 559023/1003474 [01:31<01:15, 5920.60it/s][A
+Training examples:  56%|█████▌    | 559618/1003474 [01:31<01:15, 5866.90it/s][A
+Training examples:  56%|█████▌    | 560260/1003474 [01:32<01:13, 6027.44it/s][A
+Training examples:  56%|█████▌    | 560865/1003474 [01:32<01:13, 6027.04it/s][A
+Training examples:  56%|█████▌    | 561469/1003474 [01:32<01:14, 5919.44it/s][A
+Training examples:  56%|█████▌    | 562063/1003474 [01:32<01:15, 5825.78it/s][A
+Training examples:  56%|█████▌    | 562647/1003474 [01:32<01:20, 5476.54it/s][A
+Training examples:  56%|█████▌    | 563268/1003474 [01:32<01:17, 5681.50it/s][A
+Training examples:  56%|█████▌    | 563875/1003474 [01:32<01:15, 5790.67it/s][A
+Training examples:  56%|█████▋    | 564660/1003474 [01:32<01:08, 6386.33it/s][A
+Training examples:  56%|█████▋    | 565303/1003474 [01:32<01:09, 6323.25it/s][A
+Training examples:  56%|█████▋    | 565939/1003474 [01:32<01:10, 6203.81it/s][A
+Training examples:  56%|█████▋    | 566592/1003474 [01:33<01:09, 6298.50it/s][A
+Training examples:  57%|█████▋    | 567228/1003474 [01:33<01:09, 6316.13it/s][A
+Training examples:  57%|█████▋    | 567867/1003474 [01:33<01:08, 6337.76it/s][A
+Training examples:  57%|█████▋    | 568502/1003474 [01:33<01:09, 6219.73it/s][A
+Training examples:  57%|█████▋    | 569126/1003474 [01:33<01:10, 6146.77it/s][A
+Training examples:  57%|█████▋    | 569742/1003474 [01:33<01:11, 6044.71it/s][A
+Training examples:  57%|█████▋    | 570348/1003474 [01:33<01:12, 6013.84it/s][A
+Training examples:  57%|█████▋    | 570950/1003474 [01:33<01:12, 6001.63it/s][A
+Training examples:  57%|█████▋    | 571620/1003474 [01:33<01:09, 6206.31it/s][A
+Training examples:  57%|█████▋    | 572242/1003474 [01:33<01:10, 6078.69it/s][A
+Training examples:  57%|█████▋    | 572872/1003474 [01:34<01:10, 6143.33it/s][A
+Training examples:  57%|█████▋    | 573506/1003474 [01:34<01:09, 6199.72it/s][A
+Training examples:  57%|█████▋    | 574127/1003474 [01:34<01:15, 5649.93it/s][A
+Training examples:  57%|█████▋    | 574702/1003474 [01:34<01:15, 5660.15it/s][A
+Training examples:  57%|█████▋    | 575275/1003474 [01:34<01:15, 5672.33it/s][A
+Training examples:  57%|█████▋    | 575847/1003474 [01:34<01:15, 5652.11it/s][A
+Training examples:  57%|█████▋    | 576416/1003474 [01:34<01:17, 5522.98it/s][A
+Training examples:  57%|█████▋    | 576971/1003474 [01:34<01:17, 5521.57it/s][A
+Training examples:  58%|█████▊    | 577525/1003474 [01:34<01:17, 5483.12it/s][A
+Training examples:  58%|█████▊    | 578085/1003474 [01:35<01:17, 5516.99it/s][A
+Training examples:  58%|█████▊    | 578638/1003474 [01:35<01:17, 5460.41it/s][A
+Training examples:  58%|█████▊    | 579197/1003474 [01:35<01:17, 5497.70it/s][A
+Training examples:  58%|█████▊    | 579750/1003474 [01:35<01:16, 5506.96it/s][A
+Training examples:  58%|█████▊    | 580337/1003474 [01:35<01:15, 5613.49it/s][A
+Training examples:  58%|█████▊    | 580928/1003474 [01:35<01:14, 5700.04it/s][A
+Training examples:  58%|█████▊    | 581553/1003474 [01:35<01:11, 5861.77it/s][A
+Training examples:  58%|█████▊    | 582190/1003474 [01:35<01:10, 6011.77it/s][A
+Training examples:  58%|█████▊    | 582792/1003474 [01:35<01:10, 5974.52it/s][A
+Training examples:  58%|█████▊    | 583405/1003474 [01:35<01:09, 6020.69it/s][A
+Training examples:  58%|█████▊    | 584008/1003474 [01:36<01:13, 5702.86it/s][A
+Training examples:  58%|█████▊    | 584583/1003474 [01:36<01:13, 5713.91it/s][A
+Training examples:  58%|█████▊    | 585208/1003474 [01:36<01:11, 5867.73it/s][A
+Training examples:  58%|█████▊    | 585797/1003474 [01:36<01:11, 5851.60it/s][A
+Training examples:  58%|█████▊    | 586459/1003474 [01:36<01:08, 6075.62it/s][A
+Training examples:  59%|█████▊    | 587069/1003474 [01:36<01:08, 6050.63it/s][A
+Training examples:  59%|█████▊    | 587698/1003474 [01:36<01:07, 6119.87it/s][A
+Training examples:  59%|█████▊    | 588311/1003474 [01:36<01:08, 6028.03it/s][A
+Training examples:  59%|█████▊    | 588971/1003474 [01:36<01:06, 6196.42it/s][A
+Training examples:  59%|█████▉    | 589609/1003474 [01:36<01:06, 6248.82it/s][A
+Training examples:  59%|█████▉    | 590258/1003474 [01:37<01:05, 6320.43it/s][A
+Training examples:  59%|█████▉    | 590891/1003474 [01:37<01:05, 6279.80it/s][A
+Training examples:  59%|█████▉    | 591520/1003474 [01:37<01:06, 6155.10it/s][A
+Training examples:  59%|█████▉    | 592159/1003474 [01:37<01:06, 6222.34it/s][A
+Training examples:  59%|█████▉    | 592782/1003474 [01:37<01:06, 6208.07it/s][A
+Training examples:  59%|█████▉    | 593404/1003474 [01:37<01:07, 6114.06it/s][A
+Training examples:  59%|█████▉    | 594016/1003474 [01:37<01:09, 5927.42it/s][A
+Training examples:  59%|█████▉    | 594647/1003474 [01:37<01:07, 6036.57it/s][A
+Training examples:  59%|█████▉    | 595252/1003474 [01:37<01:08, 5946.62it/s][A
+Training examples:  59%|█████▉    | 595848/1003474 [01:38<01:11, 5679.17it/s][A
+Training examples:  59%|█████▉    | 596434/1003474 [01:38<01:11, 5728.45it/s][A
+Training examples:  60%|█████▉    | 597120/1003474 [01:38<01:07, 6051.96it/s][A
+Training examples:  60%|█████▉    | 597740/1003474 [01:38<01:06, 6093.04it/s][A
+Training examples:  60%|█████▉    | 598352/1003474 [01:38<01:07, 5986.70it/s][A
+Training examples:  60%|█████▉    | 598976/1003474 [01:38<01:06, 6058.42it/s][A
+Training examples:  60%|█████▉    | 599617/1003474 [01:38<01:05, 6160.94it/s][A
+Training examples:  60%|█████▉    | 600235/1003474 [01:38<01:07, 5987.77it/s][A
+Training examples:  60%|█████▉    | 600849/1003474 [01:38<01:06, 6029.42it/s][A
+Training examples:  60%|█████▉    | 601498/1003474 [01:38<01:05, 6164.25it/s][A
+Training examples:  60%|██████    | 602116/1003474 [01:39<01:05, 6087.02it/s][A
+Training examples:  60%|██████    | 602726/1003474 [01:39<01:06, 6014.31it/s][A
+Training examples:  60%|██████    | 603329/1003474 [01:39<01:07, 5944.73it/s][A
+Training examples:  60%|██████    | 603960/1003474 [01:39<01:06, 6049.39it/s][A
+Training examples:  60%|██████    | 604566/1003474 [01:39<01:06, 5965.20it/s][A
+Training examples:  60%|██████    | 605188/1003474 [01:39<01:05, 6039.75it/s][A
+Training examples:  60%|██████    | 605793/1003474 [01:39<01:06, 5965.32it/s][A
+Training examples:  60%|██████    | 606391/1003474 [01:39<01:11, 5588.41it/s][A
+Training examples:  60%|██████    | 607010/1003474 [01:39<01:08, 5755.81it/s][A
+Training examples:  61%|██████    | 607648/1003474 [01:39<01:06, 5933.32it/s][A
+Training examples:  61%|██████    | 608256/1003474 [01:40<01:06, 5973.98it/s][A
+Training examples:  61%|██████    | 608890/1003474 [01:40<01:04, 6079.18it/s][A
+Training examples:  61%|██████    | 609523/1003474 [01:40<01:04, 6150.07it/s][A
+Training examples:  61%|██████    | 610140/1003474 [01:40<01:05, 6016.48it/s][A
+Training examples:  61%|██████    | 610804/1003474 [01:40<01:03, 6198.58it/s][A
+Training examples:  61%|██████    | 611426/1003474 [01:40<01:06, 5892.16it/s][A
+Training examples:  61%|██████    | 612020/1003474 [01:40<01:08, 5679.47it/s][A
+Training examples:  61%|██████    | 612650/1003474 [01:40<01:06, 5852.40it/s][A
+Training examples:  61%|██████    | 613239/1003474 [01:40<01:13, 5307.52it/s][A
+Training examples:  61%|██████    | 613870/1003474 [01:41<01:09, 5577.04it/s][A
+Training examples:  61%|██████    | 614481/1003474 [01:41<01:07, 5724.98it/s][A
+Training examples:  61%|██████▏   | 615086/1003474 [01:41<01:06, 5815.17it/s][A
+Training examples:  61%|██████▏   | 615682/1003474 [01:41<01:06, 5855.09it/s][A
+Training examples:  61%|██████▏   | 616273/1003474 [01:41<01:06, 5833.15it/s][A
+Training examples:  61%|██████▏   | 616908/1003474 [01:41<01:04, 5983.61it/s][A
+Training examples:  62%|██████▏   | 617509/1003474 [01:41<01:10, 5459.88it/s][A
+Training examples:  62%|██████▏   | 618202/1003474 [01:41<01:05, 5867.86it/s][A
+Training examples:  62%|██████▏   | 618826/1003474 [01:41<01:04, 5971.95it/s][A
+Training examples:  62%|██████▏   | 619432/1003474 [01:41<01:04, 5931.48it/s][A
+Training examples:  62%|██████▏   | 620071/1003474 [01:42<01:03, 6062.84it/s][A
+Training examples:  62%|██████▏   | 620682/1003474 [01:42<01:03, 6023.47it/s][A
+Training examples:  62%|██████▏   | 621288/1003474 [01:42<01:03, 6029.72it/s][A
+Training examples:  62%|██████▏   | 621920/1003474 [01:42<01:02, 6113.48it/s][A
+Training examples:  62%|██████▏   | 622558/1003474 [01:42<01:01, 6189.98it/s][A
+Training examples:  62%|██████▏   | 623216/1003474 [01:42<01:00, 6303.75it/s][A
+Training examples:  62%|██████▏   | 623848/1003474 [01:42<01:00, 6268.44it/s][A
+Training examples:  62%|██████▏   | 624476/1003474 [01:42<01:01, 6153.75it/s][A
+Training examples:  62%|██████▏   | 625093/1003474 [01:42<01:02, 6070.91it/s][A
+Training examples:  62%|██████▏   | 625706/1003474 [01:43<01:02, 6085.85it/s][A
+Training examples:  62%|██████▏   | 626316/1003474 [01:43<01:02, 6030.80it/s][A
+Training examples:  62%|██████▏   | 627003/1003474 [01:43<01:00, 6274.46it/s][A
+Training examples:  63%|██████▎   | 627632/1003474 [01:43<01:00, 6222.52it/s][A
+Training examples:  63%|██████▎   | 628313/1003474 [01:43<00:58, 6394.64it/s][A
+Training examples:  63%|██████▎   | 628954/1003474 [01:43<01:01, 6075.90it/s][A
+Training examples:  63%|██████▎   | 629608/1003474 [01:43<01:00, 6208.30it/s][A
+Training examples:  63%|██████▎   | 630237/1003474 [01:43<00:59, 6230.88it/s][A
+Training examples:  63%|██████▎   | 630863/1003474 [01:43<01:04, 5785.59it/s][A
+Training examples:  63%|██████▎   | 631466/1003474 [01:43<01:03, 5852.56it/s][A
+Training examples:  63%|██████▎   | 632098/1003474 [01:44<01:02, 5984.41it/s][A
+Training examples:  63%|██████▎   | 632702/1003474 [01:44<01:02, 5931.67it/s][A
+Training examples:  63%|██████▎   | 633383/1003474 [01:44<00:59, 6184.75it/s][A
+Training examples:  63%|██████▎   | 634005/1003474 [01:44<00:59, 6162.35it/s][A
+Training examples:  63%|██████▎   | 634624/1003474 [01:44<01:00, 6062.13it/s][A
+Training examples:  63%|██████▎   | 635232/1003474 [01:44<01:00, 6062.06it/s][A
+Training examples:  63%|██████▎   | 635850/1003474 [01:44<01:00, 6095.24it/s][A
+Training examples:  63%|██████▎   | 636571/1003474 [01:44<00:57, 6424.33it/s][A
+Training examples:  64%|██████▎   | 637215/1003474 [01:44<00:58, 6277.65it/s][A
+Training examples:  64%|██████▎   | 637845/1003474 [01:44<00:59, 6156.67it/s][A
+Training examples:  64%|██████▎   | 638494/1003474 [01:45<00:58, 6253.04it/s][A
+Training examples:  64%|██████▎   | 639121/1003474 [01:45<00:59, 6078.54it/s][A
+Training examples:  64%|██████▍   | 639731/1003474 [01:45<00:59, 6071.39it/s][A
+Training examples:  64%|██████▍   | 640383/1003474 [01:45<00:58, 6201.70it/s][A
+Training examples:  64%|██████▍   | 641005/1003474 [01:45<01:00, 6040.92it/s][A
+Training examples:  64%|██████▍   | 641611/1003474 [01:45<01:39, 3652.81it/s][A
+Training examples:  64%|██████▍   | 642252/1003474 [01:45<01:25, 4204.95it/s][A
+Training examples:  64%|██████▍   | 642883/1003474 [01:46<01:17, 4672.98it/s][A
+Training examples:  64%|██████▍   | 643442/1003474 [01:46<01:17, 4661.21it/s][A
+Training examples:  64%|██████▍   | 644047/1003474 [01:46<01:11, 5003.12it/s][A
+Training examples:  64%|██████▍   | 644657/1003474 [01:46<01:07, 5288.26it/s][A
+Training examples:  64%|██████▍   | 645290/1003474 [01:46<01:04, 5570.54it/s][A
+Training examples:  64%|██████▍   | 645888/1003474 [01:46<01:02, 5682.99it/s][A
+Training examples:  64%|██████▍   | 646593/1003474 [01:46<00:58, 6071.68it/s][A
+Training examples:  64%|██████▍   | 647219/1003474 [01:46<00:58, 6091.75it/s][A
+Training examples:  65%|██████▍   | 647878/1003474 [01:46<00:57, 6234.94it/s][A
+Training examples:  65%|██████▍   | 648511/1003474 [01:46<00:57, 6134.08it/s][A
+Training examples:  65%|██████▍   | 649145/1003474 [01:47<00:57, 6191.83it/s][A
+Training examples:  65%|██████▍   | 649770/1003474 [01:47<00:57, 6113.95it/s][A
+Training examples:  65%|██████▍   | 650429/1003474 [01:47<00:56, 6250.54it/s][A
+Training examples:  65%|██████▍   | 651057/1003474 [01:47<00:56, 6256.69it/s][A
+Training examples:  65%|██████▍   | 651685/1003474 [01:47<00:56, 6185.79it/s][A
+Training examples:  65%|██████▌   | 652322/1003474 [01:47<00:56, 6237.65it/s][A
+Training examples:  65%|██████▌   | 652947/1003474 [01:47<00:57, 6074.97it/s][A
+Training examples:  65%|██████▌   | 653660/1003474 [01:47<00:54, 6380.94it/s][A
+Training examples:  65%|██████▌   | 654301/1003474 [01:47<00:59, 5841.58it/s][A
+Training examples:  65%|██████▌   | 654895/1003474 [01:48<01:02, 5598.90it/s][A
+Training examples:  65%|██████▌   | 655512/1003474 [01:48<01:00, 5754.20it/s][A
+Training examples:  65%|██████▌   | 656137/1003474 [01:48<00:58, 5892.91it/s][A
+Training examples:  65%|██████▌   | 656786/1003474 [01:48<00:57, 6061.76it/s][A
+Training examples:  66%|██████▌   | 657433/1003474 [01:48<00:55, 6179.39it/s][A
+Training examples:  66%|██████▌   | 658092/1003474 [01:48<00:54, 6298.41it/s][A
+Training examples:  66%|██████▌   | 658725/1003474 [01:48<00:55, 6243.97it/s][A
+Training examples:  66%|██████▌   | 659415/1003474 [01:48<00:53, 6436.24it/s][A
+Training examples:  66%|██████▌   | 660061/1003474 [01:48<00:54, 6321.94it/s][A
+Training examples:  66%|██████▌   | 660695/1003474 [01:48<00:54, 6267.66it/s][A
+Training examples:  66%|██████▌   | 661327/1003474 [01:49<00:54, 6280.70it/s][A
+Training examples:  66%|██████▌   | 661956/1003474 [01:49<00:55, 6158.11it/s][A
+Training examples:  66%|██████▌   | 662573/1003474 [01:49<00:55, 6138.19it/s][A
+Training examples:  66%|██████▌   | 663188/1003474 [01:49<00:55, 6101.28it/s][A
+Training examples:  66%|██████▌   | 663817/1003474 [01:49<00:55, 6156.17it/s][A
+Training examples:  66%|██████▌   | 664452/1003474 [01:49<00:54, 6211.00it/s][A
+Training examples:  66%|██████▋   | 665093/1003474 [01:49<00:53, 6266.64it/s][A
+Training examples:  66%|██████▋   | 665720/1003474 [01:49<00:54, 6206.82it/s][A
+Training examples:  66%|██████▋   | 666346/1003474 [01:49<00:54, 6221.10it/s][A
+Training examples:  66%|██████▋   | 666969/1003474 [01:49<00:56, 5979.38it/s][A
+Training examples:  67%|██████▋   | 667598/1003474 [01:50<00:55, 6067.70it/s][A
+Training examples:  67%|██████▋   | 668207/1003474 [01:50<00:55, 6062.83it/s][A
+Training examples:  67%|██████▋   | 668815/1003474 [01:50<00:58, 5742.70it/s][A
+Training examples:  67%|██████▋   | 669450/1003474 [01:50<00:56, 5914.46it/s][A
+Training examples:  67%|██████▋   | 670079/1003474 [01:50<00:55, 6021.89it/s][A
+Training examples:  67%|██████▋   | 670690/1003474 [01:50<00:55, 6046.38it/s][A
+Training examples:  67%|██████▋   | 671420/1003474 [01:50<00:58, 5686.83it/s][A
+Training examples:  67%|██████▋   | 672122/1003474 [01:50<00:54, 6048.08it/s][A
+Training examples:  67%|██████▋   | 672737/1003474 [01:50<00:54, 6022.88it/s][A
+Training examples:  67%|██████▋   | 673347/1003474 [01:51<01:01, 5376.04it/s][A
+Training examples:  67%|██████▋   | 673902/1003474 [01:51<01:00, 5419.28it/s][A
+Training examples:  67%|██████▋   | 674504/1003474 [01:51<00:59, 5553.70it/s][A
+Training examples:  67%|██████▋   | 675133/1003474 [01:51<00:57, 5758.13it/s][A
+Training examples:  67%|██████▋   | 675763/1003474 [01:51<00:55, 5910.99it/s][A
+Training examples:  67%|██████▋   | 676361/1003474 [01:51<00:55, 5910.97it/s][A
+Training examples:  67%|██████▋   | 676972/1003474 [01:51<00:54, 5967.92it/s][A
+Training examples:  68%|██████▊   | 677603/1003474 [01:51<00:53, 6068.31it/s][A
+Training examples:  68%|██████▊   | 678220/1003474 [01:51<00:53, 6098.30it/s][A
+Training examples:  68%|██████▊   | 678832/1003474 [01:52<00:53, 6051.58it/s][A
+Training examples:  68%|██████▊   | 679439/1003474 [01:52<00:54, 5994.48it/s][A
+Training examples:  68%|██████▊   | 680040/1003474 [01:52<00:57, 5663.85it/s][A
+Training examples:  68%|██████▊   | 680651/1003474 [01:52<00:55, 5790.72it/s][A
+Training examples:  68%|██████▊   | 681352/1003474 [01:52<00:52, 6142.24it/s][A
+Training examples:  68%|██████▊   | 681975/1003474 [01:52<00:52, 6166.62it/s][A
+Training examples:  68%|██████▊   | 682666/1003474 [01:52<00:50, 6383.77it/s][A
+Training examples:  68%|██████▊   | 683307/1003474 [01:52<00:51, 6274.38it/s][A
+Training examples:  68%|██████▊   | 683944/1003474 [01:52<00:50, 6299.02it/s][A
+Training examples:  68%|██████▊   | 684576/1003474 [01:52<00:51, 6180.39it/s][A
+Training examples:  68%|██████▊   | 685204/1003474 [01:53<00:51, 6208.00it/s][A
+Training examples:  68%|██████▊   | 685826/1003474 [01:53<00:52, 6086.74it/s][A
+Training examples:  68%|██████▊   | 686457/1003474 [01:53<00:51, 6122.90it/s][A
+Training examples:  68%|██████▊   | 687092/1003474 [01:53<00:51, 6187.35it/s][A
+Training examples:  69%|██████▊   | 687712/1003474 [01:53<00:53, 5933.51it/s][A
+Training examples:  69%|██████▊   | 688468/1003474 [01:53<00:49, 6399.74it/s][A
+Training examples:  69%|██████▊   | 689112/1003474 [01:53<00:50, 6195.53it/s][A
+Training examples:  69%|██████▊   | 689740/1003474 [01:53<00:50, 6219.16it/s][A
+Training examples:  69%|██████▉   | 690372/1003474 [01:53<00:50, 6246.30it/s][A
+Training examples:  69%|██████▉   | 690999/1003474 [01:53<00:53, 5836.90it/s][A
+Training examples:  69%|██████▉   | 691629/1003474 [01:54<00:52, 5965.91it/s][A
+Training examples:  69%|██████▉   | 692231/1003474 [01:54<00:52, 5969.56it/s][A
+Training examples:  69%|██████▉   | 692921/1003474 [01:54<00:49, 6236.60it/s][A
+Training examples:  69%|██████▉   | 693549/1003474 [01:54<00:50, 6128.17it/s][A
+Training examples:  69%|██████▉   | 694238/1003474 [01:54<00:48, 6347.71it/s][A
+Training examples:  69%|██████▉   | 694876/1003474 [01:54<00:48, 6314.71it/s][A
+Training examples:  69%|██████▉   | 695546/1003474 [01:54<00:47, 6426.32it/s][A
+Training examples:  69%|██████▉   | 696191/1003474 [01:54<00:47, 6416.92it/s][A
+Training examples:  69%|██████▉   | 696834/1003474 [01:54<00:48, 6339.03it/s][A
+Training examples:  70%|██████▉   | 697469/1003474 [01:55<00:51, 5927.70it/s][A
+Training examples:  70%|██████▉   | 698068/1003474 [01:55<00:51, 5921.94it/s][A
+Training examples:  70%|██████▉   | 698665/1003474 [01:55<00:52, 5816.29it/s][A
+Training examples:  70%|██████▉   | 699278/1003474 [01:55<00:51, 5905.90it/s][A
+Training examples:  70%|██████▉   | 699896/1003474 [01:55<00:50, 5983.13it/s][A
+Training examples:  70%|██████▉   | 700497/1003474 [01:55<00:51, 5908.10it/s][A
+Training examples:  70%|██████▉   | 701090/1003474 [01:55<00:51, 5837.37it/s][A
+Training examples:  70%|██████▉   | 701675/1003474 [01:55<00:51, 5834.13it/s][A
+Training examples:  70%|██████▉   | 702260/1003474 [01:55<00:54, 5520.51it/s][A
+Training examples:  70%|███████   | 702874/1003474 [01:55<00:52, 5694.07it/s][A
+Training examples:  70%|███████   | 703490/1003474 [01:56<00:51, 5827.70it/s][A
+Training examples:  70%|███████   | 704080/1003474 [01:56<00:51, 5847.08it/s][A
+Training examples:  70%|███████   | 704749/1003474 [01:56<00:49, 6094.39it/s][A
+Training examples:  70%|███████   | 705361/1003474 [01:56<00:49, 6070.37it/s][A
+Training examples:  70%|███████   | 705970/1003474 [01:56<00:49, 6066.05it/s][A
+Training examples:  70%|███████   | 706598/1003474 [01:56<00:48, 6129.14it/s][A
+Training examples:  70%|███████   | 707212/1003474 [01:56<00:48, 6109.40it/s][A
+Training examples:  71%|███████   | 707824/1003474 [01:56<00:48, 6106.77it/s][A
+Training examples:  71%|███████   | 708436/1003474 [01:56<00:49, 6009.06it/s][A
+Training examples:  71%|███████   | 709087/1003474 [01:56<00:47, 6155.68it/s][A
+Training examples:  71%|███████   | 709704/1003474 [01:57<00:47, 6159.52it/s][A
+Training examples:  71%|███████   | 710348/1003474 [01:57<00:46, 6242.57it/s][A
+Training examples:  71%|███████   | 710973/1003474 [01:57<00:47, 6211.86it/s][A
+Training examples:  71%|███████   | 711595/1003474 [01:57<00:47, 6188.38it/s][A
+Training examples:  71%|███████   | 712215/1003474 [01:57<00:47, 6123.65it/s][A
+Training examples:  71%|███████   | 712828/1003474 [01:57<00:47, 6120.16it/s][A
+Training examples:  71%|███████   | 713441/1003474 [01:57<00:51, 5639.48it/s][A
+Training examples:  71%|███████   | 714063/1003474 [01:57<00:49, 5801.17it/s][A
+Training examples:  71%|███████   | 714688/1003474 [01:57<00:48, 5928.84it/s][A
+Training examples:  71%|███████▏  | 715319/1003474 [01:58<00:47, 6039.18it/s][A
+Training examples:  71%|███████▏  | 715931/1003474 [01:58<00:47, 6061.46it/s][A
+Training examples:  71%|███████▏  | 716559/1003474 [01:58<00:46, 6123.27it/s][A
+Training examples:  71%|███████▏  | 717183/1003474 [01:58<00:46, 6155.67it/s][A
+Training examples:  72%|███████▏  | 717801/1003474 [01:58<00:47, 6035.81it/s][A
+Training examples:  72%|███████▏  | 718487/1003474 [01:58<00:45, 6277.52it/s][A
+Training examples:  72%|███████▏  | 719117/1003474 [01:58<00:47, 6021.73it/s][A
+Training examples:  72%|███████▏  | 719762/1003474 [01:58<00:46, 6144.25it/s][A
+Training examples:  72%|███████▏  | 720380/1003474 [01:58<00:46, 6047.63it/s][A
+Training examples:  72%|███████▏  | 720994/1003474 [01:58<00:46, 6073.43it/s][A
+Training examples:  72%|███████▏  | 721603/1003474 [01:59<00:46, 6037.02it/s][A
+Training examples:  72%|███████▏  | 722234/1003474 [01:59<00:45, 6116.71it/s][A
+Training examples:  72%|███████▏  | 722883/1003474 [01:59<00:45, 6225.44it/s][A
+Training examples:  72%|███████▏  | 723507/1003474 [01:59<00:45, 6192.08it/s][A
+Training examples:  72%|███████▏  | 724175/1003474 [01:59<00:44, 6335.03it/s][A
+Training examples:  72%|███████▏  | 724810/1003474 [01:59<00:44, 6237.29it/s][A
+Training examples:  72%|███████▏  | 725435/1003474 [01:59<00:44, 6197.50it/s][A
+Training examples:  72%|███████▏  | 726056/1003474 [01:59<00:48, 5697.95it/s][A
+Training examples:  72%|███████▏  | 726695/1003474 [01:59<00:46, 5890.87it/s][A
+Training examples:  72%|███████▏  | 727312/1003474 [01:59<00:46, 5969.35it/s][A
+Training examples:  73%|███████▎  | 727915/1003474 [02:00<00:46, 5957.60it/s][A
+Training examples:  73%|███████▎  | 728558/1003474 [02:00<00:45, 6094.18it/s][A
+Training examples:  73%|███████▎  | 729194/1003474 [02:00<00:44, 6171.07it/s][A
+Training examples:  73%|███████▎  | 729827/1003474 [02:00<00:44, 6217.52it/s][A
+Training examples:  73%|███████▎  | 730451/1003474 [02:00<00:44, 6170.49it/s][A
+Training examples:  73%|███████▎  | 731132/1003474 [02:00<00:42, 6359.51it/s][A
+Training examples:  73%|███████▎  | 731770/1003474 [02:00<00:43, 6284.78it/s][A
+Training examples:  73%|███████▎  | 732400/1003474 [02:00<00:43, 6245.77it/s][A
+Training examples:  73%|███████▎  | 733026/1003474 [02:00<00:43, 6233.29it/s][A
+Training examples:  73%|███████▎  | 733650/1003474 [02:01<00:43, 6138.93it/s][A
+Training examples:  73%|███████▎  | 734277/1003474 [02:01<00:43, 6176.17it/s][A
+Training examples:  73%|███████▎  | 734905/1003474 [02:01<00:43, 6204.67it/s][A
+Training examples:  73%|███████▎  | 735572/1003474 [02:01<00:42, 6340.68it/s][A
+Training examples:  73%|███████▎  | 736207/1003474 [02:01<00:42, 6293.20it/s][A
+Training examples:  73%|███████▎  | 736874/1003474 [02:01<00:41, 6403.14it/s][A
+Training examples:  73%|███████▎  | 737515/1003474 [02:01<00:44, 5988.45it/s][A
+Training examples:  74%|███████▎  | 738179/1003474 [02:01<00:42, 6172.52it/s][A
+Training examples:  74%|███████▎  | 738802/1003474 [02:01<00:46, 5704.59it/s][A
+Training examples:  74%|███████▎  | 739450/1003474 [02:01<00:44, 5916.23it/s][A
+Training examples:  74%|███████▎  | 740051/1003474 [02:02<00:44, 5934.32it/s][A
+Training examples:  74%|███████▍  | 740684/1003474 [02:02<00:43, 6046.99it/s][A
+Training examples:  74%|███████▍  | 741315/1003474 [02:02<00:42, 6121.28it/s][A
+Training examples:  74%|███████▍  | 741931/1003474 [02:02<00:43, 6029.63it/s][A
+Training examples:  74%|███████▍  | 742552/1003474 [02:02<00:42, 6080.57it/s][A
+Training examples:  74%|███████▍  | 743201/1003474 [02:02<00:41, 6198.26it/s][A
+Training examples:  74%|███████▍  | 743846/1003474 [02:02<00:41, 6271.23it/s][A
+Training examples:  74%|███████▍  | 744475/1003474 [02:02<00:41, 6209.17it/s][A
+Training examples:  74%|███████▍  | 745139/1003474 [02:02<00:40, 6334.01it/s][A
+Training examples:  74%|███████▍  | 745774/1003474 [02:02<00:40, 6299.96it/s][A
+Training examples:  74%|███████▍  | 746432/1003474 [02:03<00:40, 6382.14it/s][A
+Training examples:  74%|███████▍  | 747071/1003474 [02:03<00:40, 6345.54it/s][A
+Training examples:  75%|███████▍  | 747706/1003474 [02:03<00:41, 6237.34it/s][A
+Training examples:  75%|███████▍  | 748341/1003474 [02:03<00:40, 6268.37it/s][A
+Training examples:  75%|███████▍  | 748969/1003474 [02:03<00:40, 6243.41it/s][A
+Training examples:  75%|███████▍  | 749637/1003474 [02:03<00:39, 6371.31it/s][A
+Training examples:  75%|███████▍  | 750275/1003474 [02:03<00:41, 6169.13it/s][A
+Training examples:  75%|███████▍  | 750894/1003474 [02:03<00:41, 6112.39it/s][A
+Training examples:  75%|███████▍  | 751507/1003474 [02:03<00:42, 5950.95it/s][A
+Training examples:  75%|███████▍  | 752141/1003474 [02:04<00:41, 6062.66it/s][A
+Training examples:  75%|███████▌  | 752749/1003474 [02:04<00:45, 5510.02it/s][A
+Training examples:  75%|███████▌  | 753369/1003474 [02:04<00:43, 5697.40it/s][A
+Training examples:  75%|███████▌  | 753986/1003474 [02:04<00:42, 5827.97it/s][A
+Training examples:  75%|███████▌  | 754576/1003474 [02:04<00:43, 5756.39it/s][A
+Training examples:  75%|███████▌  | 755168/1003474 [02:04<00:42, 5801.22it/s][A
+Training examples:  75%|███████▌  | 755804/1003474 [02:04<00:41, 5962.66it/s][A
+Training examples:  75%|███████▌  | 756404/1003474 [02:04<00:41, 5921.92it/s][A
+Training examples:  75%|███████▌  | 756999/1003474 [02:04<00:41, 5921.34it/s][A
+Training examples:  76%|███████▌  | 757634/1003474 [02:04<00:40, 6046.29it/s][A
+Training examples:  76%|███████▌  | 758281/1003474 [02:05<00:39, 6170.34it/s][A
+Training examples:  76%|███████▌  | 758900/1003474 [02:05<00:39, 6175.75it/s][A
+Training examples:  76%|███████▌  | 759519/1003474 [02:05<00:40, 6026.45it/s][A
+Training examples:  76%|███████▌  | 760132/1003474 [02:05<00:40, 6055.90it/s][A
+Training examples:  76%|███████▌  | 760740/1003474 [02:05<00:40, 6062.69it/s][A
+Training examples:  76%|███████▌  | 761371/1003474 [02:05<00:39, 6135.11it/s][A
+Training examples:  76%|███████▌  | 761986/1003474 [02:05<00:39, 6086.95it/s][A
+Training examples:  76%|███████▌  | 762596/1003474 [02:05<00:39, 6072.56it/s][A
+Training examples:  76%|███████▌  | 763204/1003474 [02:05<00:39, 6032.32it/s][A
+Training examples:  76%|███████▌  | 763816/1003474 [02:05<00:39, 6058.15it/s][A
+Training examples:  76%|███████▌  | 764423/1003474 [02:06<00:41, 5696.65it/s][A
+Training examples:  76%|███████▌  | 765010/1003474 [02:06<00:41, 5745.46it/s][A
+Training examples:  76%|███████▋  | 765668/1003474 [02:06<00:39, 5985.95it/s][A
+Training examples:  76%|███████▋  | 766270/1003474 [02:06<00:40, 5846.13it/s][A
+Training examples:  76%|███████▋  | 766948/1003474 [02:06<00:38, 6115.72it/s][A
+Training examples:  76%|███████▋  | 767563/1003474 [02:06<00:40, 5808.22it/s][A
+Training examples:  77%|███████▋  | 768219/1003474 [02:06<00:39, 6020.69it/s][A
+Training examples:  77%|███████▋  | 768826/1003474 [02:06<00:38, 6034.22it/s][A
+Training examples:  77%|███████▋  | 769458/1003474 [02:06<00:38, 6115.23it/s][A
+Training examples:  77%|███████▋  | 770072/1003474 [02:07<00:38, 6099.09it/s][A
+Training examples:  77%|███████▋  | 770684/1003474 [02:07<00:38, 6044.85it/s][A
+Training examples:  77%|███████▋  | 771290/1003474 [02:07<00:38, 6027.00it/s][A
+Training examples:  77%|███████▋  | 771996/1003474 [02:07<00:36, 6330.23it/s][A
+Training examples:  77%|███████▋  | 772661/1003474 [02:07<00:35, 6421.92it/s][A
+Training examples:  77%|███████▋  | 773305/1003474 [02:07<00:36, 6251.08it/s][A
+Training examples:  77%|███████▋  | 773939/1003474 [02:07<00:36, 6275.13it/s][A
+Training examples:  77%|███████▋  | 774568/1003474 [02:07<00:37, 6092.15it/s][A
+Training examples:  77%|███████▋  | 775192/1003474 [02:07<00:37, 6134.58it/s][A
+Training examples:  77%|███████▋  | 775826/1003474 [02:07<00:36, 6194.16it/s][A
+Training examples:  77%|███████▋  | 776447/1003474 [02:08<00:39, 5779.07it/s][A
+Training examples:  77%|███████▋  | 777087/1003474 [02:08<00:38, 5951.83it/s][A
+Training examples:  78%|███████▊  | 777748/1003474 [02:08<00:36, 6139.67it/s][A
+Training examples:  78%|███████▊  | 778367/1003474 [02:08<00:36, 6110.83it/s][A
+Training examples:  78%|███████▊  | 778984/1003474 [02:08<00:36, 6127.38it/s][A
+Training examples:  78%|███████▊  | 779613/1003474 [02:08<00:36, 6173.28it/s][A
+Training examples:  78%|███████▊  | 780232/1003474 [02:08<00:36, 6089.51it/s][A
+Training examples:  78%|███████▊  | 780892/1003474 [02:08<00:35, 6238.02it/s][A
+Training examples:  78%|███████▊  | 781518/1003474 [02:08<00:35, 6170.14it/s][A
+Training examples:  78%|███████▊  | 782217/1003474 [02:08<00:34, 6410.04it/s][A
+Training examples:  78%|███████▊  | 782860/1003474 [02:09<00:35, 6272.13it/s][A
+Training examples:  78%|███████▊  | 783504/1003474 [02:09<00:34, 6321.04it/s][A
+Training examples:  78%|███████▊  | 784138/1003474 [02:09<00:35, 6095.67it/s][A
+Training examples:  78%|███████▊  | 784750/1003474 [02:09<00:35, 6091.19it/s][A
+Training examples:  78%|███████▊  | 785387/1003474 [02:09<00:35, 6170.64it/s][A
+Training examples:  78%|███████▊  | 786006/1003474 [02:09<00:35, 6129.37it/s][A
+Training examples:  78%|███████▊  | 786622/1003474 [02:09<00:35, 6137.83it/s][A
+Training examples:  78%|███████▊  | 787237/1003474 [02:09<00:35, 6084.53it/s][A
+Training examples:  79%|███████▊  | 787895/1003474 [02:09<00:34, 6229.61it/s][A
+Training examples:  79%|███████▊  | 788519/1003474 [02:10<00:38, 5633.73it/s][A
+Training examples:  79%|███████▊  | 789175/1003474 [02:10<00:36, 5889.47it/s][A
+Training examples:  79%|███████▊  | 789820/1003474 [02:10<00:35, 6045.50it/s][A
+Training examples:  79%|███████▉  | 790435/1003474 [02:10<00:35, 6073.65it/s][A
+Training examples:  79%|███████▉  | 791064/1003474 [02:10<00:34, 6133.19it/s][A
+Training examples:  79%|███████▉  | 791708/1003474 [02:10<00:34, 6220.99it/s][A
+Training examples:  79%|███████▉  | 792334/1003474 [02:10<00:34, 6192.73it/s][A
+Training examples:  79%|███████▉  | 792956/1003474 [02:10<00:34, 6179.11it/s][A
+Training examples:  79%|███████▉  | 793644/1003474 [02:10<00:32, 6384.39it/s][A
+Training examples:  79%|███████▉  | 794284/1003474 [02:10<00:33, 6252.76it/s][A
+Training examples:  79%|███████▉  | 794956/1003474 [02:11<00:32, 6389.40it/s][A
+Training examples:  79%|███████▉  | 795597/1003474 [02:11<00:33, 6269.59it/s][A
+Training examples:  79%|███████▉  | 796258/1003474 [02:11<00:32, 6366.53it/s][A
+Training examples:  79%|███████▉  | 796896/1003474 [02:11<00:33, 6237.88it/s][A
+Training examples:  79%|███████▉  | 797521/1003474 [02:11<00:33, 6153.65it/s][A
+Training examples:  80%|███████▉  | 798138/1003474 [02:11<00:33, 6157.54it/s][A
+Training examples:  80%|███████▉  | 798755/1003474 [02:11<00:34, 5996.38it/s][A
+Training examples:  80%|███████▉  | 799450/1003474 [02:11<00:32, 6272.35it/s][A
+Training examples:  80%|███████▉  | 800079/1003474 [02:11<00:34, 5813.94it/s][A
+Training examples:  80%|███████▉  | 800717/1003474 [02:12<00:33, 5970.22it/s][A
+Training examples:  80%|███████▉  | 801331/1003474 [02:12<00:33, 6017.52it/s][A
+Training examples:  80%|███████▉  | 801970/1003474 [02:12<00:32, 6123.14it/s][A
+Training examples:  80%|███████▉  | 802586/1003474 [02:12<00:33, 6046.42it/s][A
+Training examples:  80%|████████  | 803197/1003474 [02:12<00:33, 6064.24it/s][A
+Training examples:  80%|████████  | 803806/1003474 [02:12<00:33, 6035.98it/s][A
+Training examples:  80%|████████  | 804542/1003474 [02:12<00:30, 6423.50it/s][A
+Training examples:  80%|████████  | 805186/1003474 [02:12<00:32, 6194.40it/s][A
+Training examples:  80%|████████  | 805823/1003474 [02:12<00:31, 6244.12it/s][A
+Training examples:  80%|████████  | 806458/1003474 [02:12<00:31, 6273.08it/s][A
+Training examples:  80%|████████  | 807087/1003474 [02:13<00:31, 6257.71it/s][A
+Training examples:  80%|████████  | 807714/1003474 [02:13<00:31, 6257.00it/s][A
+Training examples:  81%|████████  | 808341/1003474 [02:13<00:31, 6107.77it/s][A
+Training examples:  81%|████████  | 808953/1003474 [02:13<00:32, 5954.37it/s][A
+Training examples:  81%|████████  | 809567/1003474 [02:13<00:32, 6005.38it/s][A
+Training examples:  81%|████████  | 810177/1003474 [02:13<00:32, 6032.01it/s][A
+Training examples:  81%|████████  | 810782/1003474 [02:13<00:32, 5971.03it/s][A
+Training examples:  81%|████████  | 811404/1003474 [02:13<00:31, 6041.90it/s][A
+Training examples:  81%|████████  | 812009/1003474 [02:13<00:34, 5590.60it/s][A
+Training examples:  81%|████████  | 812666/1003474 [02:13<00:32, 5863.96it/s][A
+Training examples:  81%|████████  | 813272/1003474 [02:14<00:32, 5917.69it/s][A
+Training examples:  81%|████████  | 813952/1003474 [02:14<00:30, 6172.93it/s][A
+Training examples:  81%|████████  | 814594/1003474 [02:14<00:30, 6243.87it/s][A
+Training examples:  81%|████████  | 815222/1003474 [02:14<00:30, 6204.06it/s][A
+Training examples:  81%|████████▏ | 815845/1003474 [02:14<00:30, 6191.76it/s][A
+Training examples:  81%|████████▏ | 816466/1003474 [02:14<00:30, 6186.78it/s][A
+Training examples:  81%|████████▏ | 817117/1003474 [02:14<00:29, 6280.48it/s][A
+Training examples:  81%|████████▏ | 817746/1003474 [02:14<00:34, 5415.60it/s][A
+Training examples:  82%|████████▏ | 818365/1003474 [02:14<00:32, 5622.84it/s][A
+Training examples:  82%|████████▏ | 818960/1003474 [02:15<00:32, 5712.55it/s][A
+Training examples:  82%|████████▏ | 819597/1003474 [02:15<00:31, 5898.42it/s][A
+Training examples:  82%|████████▏ | 820225/1003474 [02:15<00:30, 6005.95it/s][A
+Training examples:  82%|████████▏ | 820834/1003474 [02:15<00:30, 5900.61it/s][A
+Training examples:  82%|████████▏ | 821458/1003474 [02:15<00:30, 5998.40it/s][A
+Training examples:  82%|████████▏ | 822094/1003474 [02:15<00:29, 6102.10it/s][A
+Training examples:  82%|████████▏ | 822752/1003474 [02:15<00:28, 6242.64it/s][A
+Training examples:  82%|████████▏ | 823379/1003474 [02:15<00:29, 6128.09it/s][A
+Training examples:  82%|████████▏ | 823999/1003474 [02:15<00:29, 6146.37it/s][A
+Training examples:  82%|████████▏ | 824616/1003474 [02:15<00:29, 6115.87it/s][A
+Training examples:  82%|████████▏ | 825229/1003474 [02:16<00:31, 5660.70it/s][A
+Training examples:  82%|████████▏ | 825824/1003474 [02:16<00:30, 5740.62it/s][A
+Training examples:  82%|████████▏ | 826474/1003474 [02:16<00:29, 5956.69it/s][A
+Training examples:  82%|████████▏ | 827075/1003474 [02:16<00:29, 5939.74it/s][A
+Training examples:  82%|████████▏ | 827692/1003474 [02:16<00:29, 6006.27it/s][A
+Training examples:  83%|████████▎ | 828316/1003474 [02:16<00:28, 6074.82it/s][A
+Training examples:  83%|████████▎ | 828926/1003474 [02:16<00:28, 6055.82it/s][A
+Training examples:  83%|████████▎ | 829541/1003474 [02:16<00:28, 6083.57it/s][A
+Training examples:  83%|████████▎ | 830154/1003474 [02:16<00:28, 6095.88it/s][A
+Training examples:  83%|████████▎ | 830789/1003474 [02:16<00:27, 6171.27it/s][A
+Training examples:  83%|████████▎ | 831407/1003474 [02:17<00:28, 5937.61it/s][A
+Training examples:  83%|████████▎ | 832003/1003474 [02:17<00:29, 5878.33it/s][A
+Training examples:  83%|████████▎ | 832648/1003474 [02:17<00:28, 6043.11it/s][A
+Training examples:  83%|████████▎ | 833282/1003474 [02:17<00:27, 6128.92it/s][A
+Training examples:  83%|████████▎ | 833897/1003474 [02:17<00:28, 5929.47it/s][A
+Training examples:  83%|████████▎ | 834493/1003474 [02:17<00:28, 5902.75it/s][A
+Training examples:  83%|████████▎ | 835087/1003474 [02:17<00:28, 5912.06it/s][A
+Training examples:  83%|████████▎ | 835680/1003474 [02:17<00:30, 5529.23it/s][A
+Training examples:  83%|████████▎ | 836308/1003474 [02:17<00:29, 5739.98it/s][A
+Training examples:  83%|████████▎ | 836926/1003474 [02:18<00:28, 5864.09it/s][A
+Training examples:  83%|████████▎ | 837529/1003474 [02:18<00:28, 5910.02it/s][A
+Training examples:  84%|████████▎ | 838242/1003474 [02:18<00:26, 6265.36it/s][A
+Training examples:  84%|████████▎ | 838877/1003474 [02:18<00:26, 6287.77it/s][A
+Training examples:  84%|████████▎ | 839508/1003474 [02:18<00:26, 6278.55it/s][A
+Training examples:  84%|████████▎ | 840144/1003474 [02:18<00:25, 6301.47it/s][A
+Training examples:  84%|████████▍ | 840776/1003474 [02:18<00:26, 6185.38it/s][A
+Training examples:  84%|████████▍ | 841396/1003474 [02:18<00:26, 6173.08it/s][A
+Training examples:  84%|████████▍ | 842022/1003474 [02:18<00:26, 6198.09it/s][A
+Training examples:  84%|████████▍ | 842643/1003474 [02:18<00:26, 6181.68it/s][A
+Training examples:  84%|████████▍ | 843262/1003474 [02:19<00:26, 6044.65it/s][A
+Training examples:  84%|████████▍ | 843882/1003474 [02:19<00:26, 6088.26it/s][A
+Training examples:  84%|████████▍ | 844527/1003474 [02:19<00:25, 6194.53it/s][A
+Training examples:  84%|████████▍ | 845148/1003474 [02:19<00:25, 6091.26it/s][A
+Training examples:  84%|████████▍ | 845762/1003474 [02:19<00:25, 6104.37it/s][A
+Training examples:  84%|████████▍ | 846373/1003474 [02:19<00:25, 6085.93it/s][A
+Training examples:  84%|████████▍ | 846982/1003474 [02:19<00:27, 5763.49it/s][A
+Training examples:  84%|████████▍ | 847578/1003474 [02:19<00:26, 5817.28it/s][A
+Training examples:  85%|████████▍ | 848240/1003474 [02:19<00:25, 6049.26it/s][A
+Training examples:  85%|████████▍ | 848889/1003474 [02:19<00:25, 6177.74it/s][A
+Training examples:  85%|████████▍ | 849543/1003474 [02:20<00:24, 6281.13it/s][A
+Training examples:  85%|████████▍ | 850173/1003474 [02:20<00:24, 6259.59it/s][A
+Training examples:  85%|████████▍ | 850801/1003474 [02:20<00:24, 6190.61it/s][A
+Training examples:  85%|████████▍ | 851422/1003474 [02:20<00:24, 6152.51it/s][A
+Training examples:  85%|████████▍ | 852052/1003474 [02:20<00:24, 6195.53it/s][A
+Training examples:  85%|████████▍ | 852688/1003474 [02:20<00:24, 6242.30it/s][A
+Training examples:  85%|████████▌ | 853313/1003474 [02:20<00:24, 6204.46it/s][A
+Training examples:  85%|████████▌ | 853934/1003474 [02:20<00:34, 4360.18it/s][A
+Training examples:  85%|████████▌ | 854612/1003474 [02:21<00:30, 4915.35it/s][A
+Training examples:  85%|████████▌ | 855237/1003474 [02:21<00:28, 5243.98it/s][A
+Training examples:  85%|████████▌ | 855885/1003474 [02:21<00:26, 5565.98it/s][A
+Training examples:  85%|████████▌ | 856511/1003474 [02:21<00:25, 5753.86it/s][A
+Training examples:  85%|████████▌ | 857131/1003474 [02:21<00:24, 5876.40it/s][A
+Training examples:  85%|████████▌ | 857780/1003474 [02:21<00:24, 6049.62it/s][A
+Training examples:  86%|████████▌ | 858407/1003474 [02:21<00:23, 6111.42it/s][A
+Training examples:  86%|████████▌ | 859051/1003474 [02:21<00:23, 6206.43it/s][A
+Training examples:  86%|████████▌ | 859681/1003474 [02:21<00:25, 5574.38it/s][A
+Training examples:  86%|████████▌ | 860278/1003474 [02:21<00:25, 5680.46it/s][A
+Training examples:  86%|████████▌ | 860946/1003474 [02:22<00:23, 5959.69it/s][A
+Training examples:  86%|████████▌ | 861577/1003474 [02:22<00:23, 6057.46it/s][A
+Training examples:  86%|████████▌ | 862234/1003474 [02:22<00:22, 6203.84it/s][A
+Training examples:  86%|████████▌ | 862861/1003474 [02:22<00:22, 6150.05it/s][A
+Training examples:  86%|████████▌ | 863520/1003474 [02:22<00:22, 6277.18it/s][A
+Training examples:  86%|████████▌ | 864152/1003474 [02:22<00:23, 6047.43it/s][A
+Training examples:  86%|████████▌ | 864847/1003474 [02:22<00:21, 6306.57it/s][A
+Training examples:  86%|████████▌ | 865482/1003474 [02:22<00:21, 6296.89it/s][A
+Training examples:  86%|████████▋ | 866115/1003474 [02:22<00:21, 6248.77it/s][A
+Training examples:  86%|████████▋ | 866751/1003474 [02:23<00:21, 6279.82it/s][A
+Training examples:  86%|████████▋ | 867381/1003474 [02:23<00:21, 6261.01it/s][A
+Training examples:  87%|████████▋ | 868009/1003474 [02:23<00:21, 6215.18it/s][A
+Training examples:  87%|████████▋ | 868632/1003474 [02:23<00:22, 5985.74it/s][A
+Training examples:  87%|████████▋ | 869263/1003474 [02:23<00:22, 6078.91it/s][A
+Training examples:  87%|████████▋ | 869873/1003474 [02:23<00:23, 5615.19it/s][A
+Training examples:  87%|████████▋ | 870505/1003474 [02:23<00:22, 5808.91it/s][A
+Training examples:  87%|████████▋ | 871142/1003474 [02:23<00:22, 5966.57it/s][A
+Training examples:  87%|████████▋ | 871745/1003474 [02:23<00:22, 5890.78it/s][A
+Training examples:  87%|████████▋ | 872394/1003474 [02:23<00:21, 6062.50it/s][A
+Training examples:  87%|████████▋ | 873118/1003474 [02:24<00:20, 6404.56it/s][A
+Training examples:  87%|████████▋ | 873762/1003474 [02:24<00:20, 6331.44it/s][A
+Training examples:  87%|████████▋ | 874398/1003474 [02:24<00:20, 6287.68it/s][A
+Training examples:  87%|████████▋ | 875029/1003474 [02:24<00:20, 6235.38it/s][A
+Training examples:  87%|████████▋ | 875654/1003474 [02:24<00:20, 6140.80it/s][A
+Training examples:  87%|████████▋ | 876272/1003474 [02:24<00:20, 6150.13it/s][A
+Training examples:  87%|████████▋ | 876903/1003474 [02:24<00:20, 6196.89it/s][A
+Training examples:  87%|████████▋ | 877524/1003474 [02:24<00:20, 6101.05it/s][A
+Training examples:  88%|████████▊ | 878135/1003474 [02:24<00:20, 6060.68it/s][A
+Training examples:  88%|████████▊ | 878798/1003474 [02:24<00:20, 6225.57it/s][A
+Training examples:  88%|████████▊ | 879422/1003474 [02:25<00:20, 6137.84it/s][A
+Training examples:  88%|████████▊ | 880111/1003474 [02:25<00:19, 6356.68it/s][A
+Training examples:  88%|████████▊ | 880748/1003474 [02:25<00:21, 5768.12it/s][A
+Training examples:  88%|████████▊ | 881388/1003474 [02:25<00:20, 5942.87it/s][A
+Training examples:  88%|████████▊ | 881992/1003474 [02:25<00:20, 5893.00it/s][A
+Training examples:  88%|████████▊ | 882647/1003474 [02:25<00:19, 6079.55it/s][A
+Training examples:  88%|████████▊ | 883261/1003474 [02:25<00:19, 6081.05it/s][A
+Training examples:  88%|████████▊ | 883876/1003474 [02:25<00:19, 6100.30it/s][A
+Training examples:  88%|████████▊ | 884491/1003474 [02:25<00:19, 6112.49it/s][A
+Training examples:  88%|████████▊ | 885143/1003474 [02:26<00:18, 6230.46it/s][A
+Training examples:  88%|████████▊ | 885771/1003474 [02:26<00:18, 6242.75it/s][A
+Training examples:  88%|████████▊ | 886397/1003474 [02:26<00:18, 6196.22it/s][A
+Training examples:  88%|████████▊ | 887018/1003474 [02:26<00:18, 6134.04it/s][A
+Training examples:  88%|████████▊ | 887633/1003474 [02:26<00:19, 5851.86it/s][A
+Training examples:  89%|████████▊ | 888450/1003474 [02:26<00:17, 6516.72it/s][A
+Training examples:  89%|████████▊ | 889107/1003474 [02:26<00:18, 6168.04it/s][A
+Training examples:  89%|████████▊ | 889731/1003474 [02:26<00:18, 6147.98it/s][A
+Training examples:  89%|████████▊ | 890354/1003474 [02:26<00:18, 6169.38it/s][A
+Training examples:  89%|████████▉ | 890993/1003474 [02:26<00:18, 6232.12it/s][A
+Training examples:  89%|████████▉ | 891619/1003474 [02:27<00:19, 5755.22it/s][A
+Training examples:  89%|████████▉ | 892232/1003474 [02:27<00:18, 5859.08it/s][A
+Training examples:  89%|████████▉ | 892867/1003474 [02:27<00:18, 5998.00it/s][A
+Training examples:  89%|████████▉ | 893473/1003474 [02:27<00:18, 5996.24it/s][A
+Training examples:  89%|████████▉ | 894162/1003474 [02:27<00:17, 6255.43it/s][A
+Training examples:  89%|████████▉ | 894810/1003474 [02:27<00:17, 6321.19it/s][A
+Training examples:  89%|████████▉ | 895445/1003474 [02:27<00:17, 6329.48it/s][A
+Training examples:  89%|████████▉ | 896080/1003474 [02:27<00:17, 6282.33it/s][A
+Training examples:  89%|████████▉ | 896710/1003474 [02:27<00:17, 6060.26it/s][A
+Training examples:  89%|████████▉ | 897323/1003474 [02:28<00:17, 6078.14it/s][A
+Training examples:  89%|████████▉ | 897960/1003474 [02:28<00:17, 6162.06it/s][A
+Training examples:  90%|████████▉ | 898600/1003474 [02:28<00:16, 6229.15it/s][A
+Training examples:  90%|████████▉ | 899225/1003474 [02:28<00:17, 6067.71it/s][A
+Training examples:  90%|████████▉ | 899861/1003474 [02:28<00:16, 6151.42it/s][A
+Training examples:  90%|████████▉ | 900478/1003474 [02:28<00:16, 6114.24it/s][A
+Training examples:  90%|████████▉ | 901114/1003474 [02:28<00:16, 6185.02it/s][A
+Training examples:  90%|████████▉ | 901734/1003474 [02:28<00:16, 6175.31it/s][A
+Training examples:  90%|████████▉ | 902372/1003474 [02:28<00:16, 6234.18it/s][A
+Training examples:  90%|████████▉ | 903008/1003474 [02:28<00:16, 6269.52it/s][A
+Training examples:  90%|█████████ | 903636/1003474 [02:29<00:17, 5711.20it/s][A
+Training examples:  90%|█████████ | 904225/1003474 [02:29<00:17, 5759.73it/s][A
+Training examples:  90%|█████████ | 904873/1003474 [02:29<00:16, 5962.99it/s][A
+Training examples:  90%|█████████ | 905508/1003474 [02:29<00:16, 6072.96it/s][A
+Training examples:  90%|█████████ | 906120/1003474 [02:29<00:16, 5884.41it/s][A
+Training examples:  90%|█████████ | 906713/1003474 [02:29<00:17, 5500.55it/s][A
+Training examples:  90%|█████████ | 907292/1003474 [02:29<00:17, 5579.33it/s][A
+Training examples:  90%|█████████ | 907856/1003474 [02:29<00:17, 5486.01it/s][A
+Training examples:  91%|█████████ | 908432/1003474 [02:29<00:17, 5562.50it/s][A
+Training examples:  91%|█████████ | 909022/1003474 [02:30<00:16, 5658.17it/s][A
+Training examples:  91%|█████████ | 909591/1003474 [02:30<00:16, 5563.80it/s][A
+Training examples:  91%|█████████ | 910234/1003474 [02:30<00:16, 5814.72it/s][A
+Training examples:  91%|█████████ | 910818/1003474 [02:30<00:15, 5814.20it/s][A
+Training examples:  91%|█████████ | 911418/1003474 [02:30<00:15, 5867.69it/s][A
+Training examples:  91%|█████████ | 912098/1003474 [02:30<00:14, 6142.09it/s][A
+Training examples:  91%|█████████ | 912714/1003474 [02:30<00:15, 6015.84it/s][A
+Training examples:  91%|█████████ | 913317/1003474 [02:30<00:16, 5611.92it/s][A
+Training examples:  91%|█████████ | 913886/1003474 [02:30<00:15, 5632.33it/s][A
+Training examples:  91%|█████████ | 914490/1003474 [02:30<00:15, 5748.07it/s][A
+Training examples:  91%|█████████ | 915082/1003474 [02:31<00:15, 5797.57it/s][A
+Training examples:  91%|█████████▏| 915674/1003474 [02:31<00:15, 5830.25it/s][A
+Training examples:  91%|█████████▏| 916291/1003474 [02:31<00:14, 5929.36it/s][A
+Training examples:  91%|█████████▏| 916905/1003474 [02:31<00:14, 5991.36it/s][A
+Training examples:  91%|█████████▏| 917516/1003474 [02:31<00:14, 6026.56it/s][A
+Training examples:  91%|█████████▏| 918120/1003474 [02:31<00:14, 5937.56it/s][A
+Training examples:  92%|█████████▏| 918715/1003474 [02:31<00:14, 5801.26it/s][A
+Training examples:  92%|█████████▏| 919297/1003474 [02:31<00:14, 5798.34it/s][A
+Training examples:  92%|█████████▏| 919940/1003474 [02:31<00:14, 5920.28it/s][A
+Training examples:  92%|█████████▏| 920546/1003474 [02:31<00:13, 5959.99it/s][A
+Training examples:  92%|█████████▏| 921174/1003474 [02:32<00:13, 6051.66it/s][A
+Training examples:  92%|█████████▏| 921780/1003474 [02:32<00:13, 5975.67it/s][A
+Training examples:  92%|█████████▏| 922379/1003474 [02:32<00:13, 5916.00it/s][A
+Training examples:  92%|█████████▏| 922971/1003474 [02:32<00:13, 5765.68it/s][A
+Training examples:  92%|█████████▏| 923549/1003474 [02:32<00:14, 5390.42it/s][A
+Training examples:  92%|█████████▏| 924178/1003474 [02:32<00:14, 5641.33it/s][A
+Training examples:  92%|█████████▏| 924768/1003474 [02:32<00:13, 5714.80it/s][A
+Training examples:  92%|█████████▏| 925443/1003474 [02:32<00:12, 6013.62it/s][A
+Training examples:  92%|█████████▏| 926111/1003474 [02:32<00:12, 6207.97it/s][A
+Training examples:  92%|█████████▏| 926735/1003474 [02:33<00:12, 6203.46it/s][A
+Training examples:  92%|█████████▏| 927358/1003474 [02:33<00:12, 6187.57it/s][A
+Training examples:  92%|█████████▏| 928066/1003474 [02:33<00:11, 6451.24it/s][A
+Training examples:  93%|█████████▎| 928713/1003474 [02:33<00:12, 6187.85it/s][A
+Training examples:  93%|█████████▎| 929364/1003474 [02:33<00:11, 6280.06it/s][A
+Training examples:  93%|█████████▎| 929995/1003474 [02:33<00:11, 6231.99it/s][A
+Training examples:  93%|█████████▎| 930620/1003474 [02:33<00:12, 6055.97it/s][A
+Training examples:  93%|█████████▎| 931228/1003474 [02:33<00:12, 5636.64it/s][A
+Training examples:  93%|█████████▎| 931845/1003474 [02:33<00:12, 5782.77it/s][A
+Training examples:  93%|█████████▎| 932446/1003474 [02:33<00:12, 5847.04it/s][A
+Training examples:  93%|█████████▎| 933045/1003474 [02:34<00:11, 5886.58it/s][A
+Training examples:  93%|█████████▎| 933637/1003474 [02:34<00:12, 5649.71it/s][A
+Training examples:  93%|█████████▎| 934247/1003474 [02:34<00:11, 5776.84it/s][A
+Training examples:  93%|█████████▎| 934829/1003474 [02:34<00:11, 5786.80it/s][A
+Training examples:  93%|█████████▎| 935411/1003474 [02:34<00:11, 5690.24it/s][A
+Training examples:  93%|█████████▎| 935982/1003474 [02:34<00:11, 5672.05it/s][A
+Training examples:  93%|█████████▎| 936551/1003474 [02:34<00:12, 5534.33it/s][A
+Training examples:  93%|█████████▎| 937113/1003474 [02:34<00:11, 5556.56it/s][A
+Training examples:  93%|█████████▎| 937670/1003474 [02:34<00:11, 5486.82it/s][A
+Training examples:  93%|█████████▎| 938220/1003474 [02:35<00:12, 5416.04it/s][A
+Training examples:  94%|█████████▎| 938763/1003474 [02:35<00:12, 5312.19it/s][A
+Training examples:  94%|█████████▎| 939295/1003474 [02:35<00:12, 5281.98it/s][A
+Training examples:  94%|█████████▎| 939907/1003474 [02:35<00:11, 5524.24it/s][A
+Training examples:  94%|█████████▎| 940461/1003474 [02:35<00:11, 5374.06it/s][A
+Training examples:  94%|█████████▍| 941022/1003474 [02:35<00:11, 5442.09it/s][A
+Training examples:  94%|█████████▍| 941574/1003474 [02:35<00:11, 5463.07it/s][A
+Training examples:  94%|█████████▍| 942132/1003474 [02:35<00:11, 5494.96it/s][A
+Training examples:  94%|█████████▍| 942717/1003474 [02:35<00:10, 5597.49it/s][A
+Training examples:  94%|█████████▍| 943278/1003474 [02:35<00:11, 5238.91it/s][A
+Training examples:  94%|█████████▍| 943867/1003474 [02:36<00:10, 5423.27it/s][A
+Training examples:  94%|█████████▍| 944453/1003474 [02:36<00:10, 5548.39it/s][A
+Training examples:  94%|█████████▍| 945029/1003474 [02:36<00:10, 5607.35it/s][A
+Training examples:  94%|█████████▍| 945620/1003474 [02:36<00:10, 5694.96it/s][A
+Training examples:  94%|█████████▍| 946192/1003474 [02:36<00:10, 5678.61it/s][A
+Training examples:  94%|█████████▍| 946767/1003474 [02:36<00:09, 5699.66it/s][A
+Training examples:  94%|█████████▍| 947361/1003474 [02:36<00:09, 5770.52it/s][A
+Training examples:  94%|█████████▍| 947939/1003474 [02:36<00:09, 5738.89it/s][A
+Training examples:  95%|█████████▍| 948514/1003474 [02:36<00:09, 5555.13it/s][A
+Training examples:  95%|█████████▍| 949132/1003474 [02:36<00:09, 5735.83it/s][A
+Training examples:  95%|█████████▍| 949709/1003474 [02:37<00:09, 5744.33it/s][A
+Training examples:  95%|█████████▍| 950316/1003474 [02:37<00:09, 5838.23it/s][A
+Training examples:  95%|█████████▍| 950901/1003474 [02:37<00:09, 5801.79it/s][A
+Training examples:  95%|█████████▍| 951510/1003474 [02:37<00:08, 5886.02it/s][A
+Training examples:  95%|█████████▍| 952100/1003474 [02:37<00:08, 5812.90it/s][A
+Training examples:  95%|█████████▍| 952682/1003474 [02:37<00:09, 5431.58it/s][A
+Training examples:  95%|█████████▍| 953256/1003474 [02:37<00:09, 5516.54it/s][A
+Training examples:  95%|█████████▌| 953861/1003474 [02:37<00:08, 5668.95it/s][A
+Training examples:  95%|█████████▌| 954463/1003474 [02:37<00:08, 5769.00it/s][A
+Training examples:  95%|█████████▌| 955083/1003474 [02:37<00:08, 5895.05it/s][A
+Training examples:  95%|█████████▌| 955691/1003474 [02:38<00:08, 5947.35it/s][A
+Training examples:  95%|█████████▌| 956288/1003474 [02:38<00:07, 5953.71it/s][A
+Training examples:  95%|█████████▌| 956938/1003474 [02:38<00:07, 6114.53it/s][A
+Training examples:  95%|█████████▌| 957551/1003474 [02:38<00:07, 6020.62it/s][A
+Training examples:  95%|█████████▌| 958176/1003474 [02:38<00:07, 6086.71it/s][A
+Training examples:  96%|█████████▌| 958786/1003474 [02:38<00:07, 6052.69it/s][A
+Training examples:  96%|█████████▌| 959392/1003474 [02:38<00:07, 5889.37it/s][A
+Training examples:  96%|█████████▌| 959996/1003474 [02:38<00:07, 5933.16it/s][A
+Training examples:  96%|█████████▌| 960639/1003474 [02:38<00:07, 6077.66it/s][A
+Training examples:  96%|█████████▌| 961248/1003474 [02:39<00:06, 6038.39it/s][A
+Training examples:  96%|█████████▌| 961870/1003474 [02:39<00:06, 6091.48it/s][A
+Training examples:  96%|█████████▌| 962480/1003474 [02:39<00:07, 5593.04it/s][A
+Training examples:  96%|█████████▌| 963059/1003474 [02:39<00:07, 5646.76it/s][A
+Training examples:  96%|█████████▌| 963733/1003474 [02:39<00:06, 5958.07it/s][A
+Training examples:  96%|█████████▌| 964352/1003474 [02:39<00:06, 6024.86it/s][A
+Training examples:  96%|█████████▌| 965055/1003474 [02:39<00:06, 6316.77it/s][A
+Training examples:  96%|█████████▌| 965691/1003474 [02:39<00:05, 6297.31it/s][A
+Training examples:  96%|█████████▋| 966330/1003474 [02:39<00:05, 6324.44it/s][A
+Training examples:  96%|█████████▋| 966965/1003474 [02:39<00:05, 6286.21it/s][A
+Training examples:  96%|█████████▋| 967614/1003474 [02:40<00:05, 6344.10it/s][A
+Training examples:  96%|█████████▋| 968261/1003474 [02:40<00:05, 6379.30it/s][A
+Training examples:  97%|█████████▋| 968900/1003474 [02:40<00:05, 6236.46it/s][A
+Training examples:  97%|█████████▋| 969525/1003474 [02:40<00:05, 6225.14it/s][A
+Training examples:  97%|█████████▋| 970149/1003474 [02:40<00:05, 6025.03it/s][A
+Training examples:  97%|█████████▋| 970755/1003474 [02:40<00:05, 6035.00it/s][A
+Training examples:  97%|█████████▋| 971360/1003474 [02:40<00:05, 5872.74it/s][A
+Training examples:  97%|█████████▋| 971997/1003474 [02:40<00:05, 6014.72it/s][A
+Training examples:  97%|█████████▋| 972601/1003474 [02:40<00:05, 5572.13it/s][A
+Training examples:  97%|█████████▋| 973254/1003474 [02:41<00:05, 5836.92it/s][A
+Training examples:  97%|█████████▋| 973891/1003474 [02:41<00:04, 5986.89it/s][A
+Training examples:  97%|█████████▋| 974514/1003474 [02:41<00:04, 6056.46it/s][A
+Training examples:  97%|█████████▋| 975124/1003474 [02:41<00:04, 6052.52it/s][A
+Training examples:  97%|█████████▋| 975774/1003474 [02:41<00:04, 6181.69it/s][A
+Training examples:  97%|█████████▋| 976395/1003474 [02:41<00:04, 5851.24it/s][A
+Training examples:  97%|█████████▋| 977075/1003474 [02:41<00:04, 6120.04it/s][A
+Training examples:  97%|█████████▋| 977692/1003474 [02:41<00:04, 5638.76it/s][A
+Training examples:  97%|█████████▋| 978321/1003474 [02:41<00:04, 5817.63it/s][A
+Training examples:  98%|█████████▊| 978912/1003474 [02:41<00:04, 5832.91it/s][A
+Training examples:  98%|█████████▊| 979512/1003474 [02:42<00:04, 5880.53it/s][A
+Training examples:  98%|█████████▊| 980105/1003474 [02:42<00:04, 5679.32it/s][A
+Training examples:  98%|█████████▊| 980746/1003474 [02:42<00:03, 5887.31it/s][A
+Training examples:  98%|█████████▊| 981425/1003474 [02:42<00:03, 6147.14it/s][A
+Training examples:  98%|█████████▊| 982044/1003474 [02:42<00:03, 6132.00it/s][A
+Training examples:  98%|█████████▊| 982672/1003474 [02:42<00:03, 6174.71it/s][A
+Training examples:  98%|█████████▊| 983292/1003474 [02:42<00:03, 5640.70it/s][A
+Training examples:  98%|█████████▊| 983957/1003474 [02:42<00:03, 5920.28it/s][A
+Training examples:  98%|█████████▊| 984565/1003474 [02:42<00:03, 5963.84it/s][A
+Training examples:  98%|█████████▊| 985201/1003474 [02:43<00:03, 6078.14it/s][A
+Training examples:  98%|█████████▊| 985908/1003474 [02:43<00:02, 6366.17it/s][A
+Training examples:  98%|█████████▊| 986556/1003474 [02:43<00:02, 6397.65it/s][A
+Training examples:  98%|█████████▊| 987199/1003474 [02:43<00:02, 6346.25it/s][A
+Training examples:  98%|█████████▊| 987836/1003474 [02:43<00:02, 6206.72it/s][A
+Training examples:  99%|█████████▊| 988476/1003474 [02:43<00:02, 6261.96it/s][A
+Training examples:  99%|█████████▊| 989104/1003474 [02:43<00:02, 6161.13it/s][A
+Training examples:  99%|█████████▊| 989722/1003474 [02:43<00:02, 6153.32it/s][A
+Training examples:  99%|█████████▊| 990339/1003474 [02:43<00:02, 6103.26it/s][A
+Training examples:  99%|█████████▉| 990990/1003474 [02:43<00:02, 6222.46it/s][A
+Training examples:  99%|█████████▉| 991613/1003474 [02:44<00:01, 6074.49it/s][A
+Training examples:  99%|█████████▉| 992222/1003474 [02:44<00:01, 6077.75it/s][A
+Training examples:  99%|█████████▉| 992831/1003474 [02:44<00:01, 6060.26it/s][A
+Training examples:  99%|█████████▉| 993442/1003474 [02:44<00:01, 6071.29it/s][A
+Training examples:  99%|█████████▉| 994051/1003474 [02:44<00:01, 6068.13it/s][A
+Training examples:  99%|█████████▉| 994659/1003474 [02:44<00:01, 6070.92it/s][A
+Training examples:  99%|█████████▉| 995267/1003474 [02:44<00:01, 5857.03it/s][A
+Training examples:  99%|█████████▉| 995870/1003474 [02:44<00:01, 5904.65it/s][A
+Training examples:  99%|█████████▉| 996483/1003474 [02:44<00:01, 5969.14it/s][A
+Training examples:  99%|█████████▉| 997081/1003474 [02:44<00:01, 5945.92it/s][A
+Training examples:  99%|█████████▉| 997715/1003474 [02:45<00:00, 6061.39it/s][A
+Training examples:  99%|█████████▉| 998327/1003474 [02:45<00:00, 6078.54it/s][A
+Training examples: 100%|█████████▉| 998993/1003474 [02:45<00:00, 6249.32it/s][A
+Training examples: 100%|█████████▉| 999619/1003474 [02:45<00:00, 6211.54it/s][A
+Training examples: 100%|█████████▉| 1000241/1003474 [02:45<00:00, 6164.73it/s][A
+Training examples: 100%|█████████▉| 1000895/1003474 [02:45<00:00, 6275.31it/s][A
+Training examples: 100%|█████████▉| 1001523/1003474 [02:45<00:00, 6032.05it/s][A
+Training examples: 100%|█████████▉| 1002163/1003474 [02:45<00:00, 6136.79it/s][A
+Training examples: 100%|█████████▉| 1002780/1003474 [02:45<00:00, 6145.78it/s][A
+Training examples: 100%|█████████▉| 1003433/1003474 [02:45<00:00, 6258.80it/s][ATraining examples: 100%|██████████| 1003474/1003474 [02:45<00:00, 6045.68it/s]
+11/21/2022 15:55:25 - INFO - root -   Loading complete!
+
+Epoch 0:   0%|          | 0/62718 [00:00<?, ?it/s][A
+
+Iteration:   0%|          | 0/62718 [00:00<?, ?it/s][A[AIteration:   0%|          | 0/62718 [00:03<?, ?it/s]
+Epoch 0:   0%|          | 0/62718 [00:03<?, ?it/s]
+Epoch:   0%|          | 0/3 [02:50<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py", line 523, in <module>
+    main()
+  File "/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/general_distill.py", line 418, in main
+    student_atts, student_reps = student_model(input_ids, segment_ids, input_mask)
+  File "/data/home/mc25653/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/home/mc25653/Pretrained-Language-Model/TinyBERT_P/transformer/modeling_without_bert_pooler.py", line 942, in forward
+    sequence_output, att_output, pooled_output = self.bert(
+ValueError: not enough values to unpack (expected 3, got 2)
